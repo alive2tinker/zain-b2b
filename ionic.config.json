@@ -1,0 +1,7 @@
+{
+  "name": "zain-b2b",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
