@@ -22,11 +22,16 @@ import '@ionic/vue/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import './assets/tailwind.css';
+import store from './store'
 
-const app = createApp(App)
-  .use(IonicVue)
+const app = createApp(App).use(store)
+  .use(IonicVue, {
+    mode: 'md',
+    rippleEffect: false
+  })
   .use(router);
-  
+
 router.isReady().then(() => {
   app.mount('#app');
 });
