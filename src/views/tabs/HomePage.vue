@@ -7,10 +7,10 @@
           <swiper :modules="modules" :pagination="{ clickable: true }" :slides-per-view="1" :space-between="50"
           @swiper="onSwiper" @slideChange="onSlideChange">
           <swiper-slide class="swiper-slide">
-            <img class="w-full rounded-md swiper-image" src="@/assets/images/slider-image-1.png" alt="">
+            <img class="w-full rounded-xl swiper-image" src="@/assets/images/slider-image-1.jpeg" alt="">
           </swiper-slide>
           <swiper-slide>
-            <img class="w-full rounded-md swiper-image" src="@/assets/images/slider-image-2.png" alt="">
+            <img class="w-full rounded-xl swiper-image" src="@/assets/images/slider-image-2.jpeg" alt="">
           </swiper-slide>
         </swiper>
         </div>
@@ -56,16 +56,16 @@
             </div>
             <div class="grid grid-cols-2 gap-4 my-2">
               <ion-button fill="clear"
-                :class="{ 'w-full normal-case CairoRegular rounded-xl font-cairo bg-white': true, 'border border-zain-primary text-zain-primary CairoBold': currentTab === 'Bill Payment', 'shadow-0 text-zain-medium': currentTab !== 'Bill Payment' }"
+                :class="{ 'w-full normal-case CairoRegular payment-tabs rounded-xl font-cairo bg-white border hover:border-zain-primary hover:bg-white': true, 'border border-zain-primary text-zain-primary CairoBold': currentTab === 'Bill Payment', 'shadow-0 text-zain-medium': currentTab !== 'Bill Payment' }"
                 @click="currentTab = 'Bill Payment'">Bill Payment</ion-button>
               <ion-button fill="clear"
-                :class="{ 'w-full normal-case CairoRegular rounded-xl font-cairo bg-white': true, 'border border-zain-primary text-zain-primary CairoBold': currentTab === 'Recharge', 'shadow-0 text-zain-medium': currentTab !== 'Recharge' }"
+                :class="{ 'w-full normal-case CairoRegular payment-tabs rounded-xl font-cairo bg-white border hover:border-zain-primary hover:bg-white': true, 'border border-zain-primary text-zain-primary CairoBold': currentTab === 'Recharge', 'shadow-0 text-zain-medium': currentTab !== 'Recharge' }"
                 @click="currentTab = 'Recharge'">Recharge</ion-button>
             </div>
             <div class="grid grid-cols-12 gap-4 mt-4">
               <div class="col-span-9">
-                <div class="rounded-lg border border-gray-300 px-2 number-input-container" style="height:50px;">
-                  <input class="number-input CairoRegular focus:mt-1" type="number" id="pay-bill-number-input"
+                <div class="rounded-lg border border-gray-300 px-2 number-input-container" style="width: 100%; height:50px;">
+                  <input class="number-input CairoRegular focus:mt-1" type="tel" id="pay-bill-number-input"
                     placeholder="1XXXXXXXXX" />
                   <label for="pay-bill-number-input" class="number-label CairoLight left-5 px-1" style="font-family:CairoRegular !important">Type Account
                     number</label>

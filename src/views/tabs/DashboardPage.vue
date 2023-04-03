@@ -50,7 +50,7 @@
           </div>
         </div>
         <div class="flex my-4 pr-4 justify-between">
-          <h3 class="text-lg CairoSemiBold my-3 md:mt-40 mx-1">Total Bill</h3>
+          <h3 class="text-lg CairoSemiBold my-2 mx-1">Total Bill</h3>
           <p class="text-sm mt-3.5 text-zain-primary CairoRegular">Bills Details<span><ion-icon class="absolute pt-1"
                 :icon="chevronForward"></ion-icon></span></p>
         </div>
