@@ -24,14 +24,13 @@
             </SplideSlide>
           </Splide>
           <div class="flex justify-center">
-            <div class="space-x-2">
+            <div class="space-x-2 mt-3">
               <button
                 v-for="(page, index) in pages"
                 :key="index"
                 :class="{
-                  'w-11 bg-zinc-800 h-2 rounded': true,
-                  'w-2': currentIndex != index,
-                  'w-11': currentIndex == index,
+                  'w-3 bg-white h-3 rounded-full': true,
+                  'border-zain': currentIndex === index,
                 }"
               ></button>
             </div>
@@ -1046,4 +1045,7 @@ const modules = [Navigation, Pagination, Scrollbar, A11y];
 /* .hidden {
   display: none !important;
 } */
+.border-zain{
+  border: 1.5px solid var(--ion-color-primary);
+}
 </style>
