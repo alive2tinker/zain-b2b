@@ -40,11 +40,12 @@
             <div class="space-x-2 mt-3">
               <button
                 v-for="(page, index) in pages"
+                @click="changeSlide(index)"
                 :key="index"
                 :class="{
-                  'w-3 h-3 rounded-full border-2': true,
-                  'bg-white border-zain': currentIndex === index,
-                  'bg-zinc-200 border-zain-medium': currentIndex !== index,
+                  'w-3 h-3 rounded-full': true,
+                  'bg-white border-2 border-zain-primary': currentIndex === index,
+                  'bg-zinc-200 border-2 border-zain-lightgray': currentIndex !== index,
                 }"
               ></button>
             </div>
@@ -1020,12 +1021,8 @@ import {
 } from "@ionic/vue";
 import HeaderContainer from "@/components/HeaderContainer.vue";
 import CardComponent from "@/components/CardComponent.vue";
-import { Swiper, SwiperSlide } from "swiper/vue";
 import { chevronForward } from "ionicons/icons";
-import { ref, computed } from "vue";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { ref } from "vue";
 
 const splideOptions = {
   arrows: false,
@@ -1036,13 +1033,20 @@ const splideOptions = {
 const currentIndex = ref(0);
 const pages = ref(0);
 
+let splideEl = null;
+
 function hideDefaultPagination(splide, data) {
   data.list.classList.add("hidden");
   pages.value = splide.Components.Elements.slides.length;
+  splideEl = splide;
 }
 
 function updatePagination(splide, newIndex, PrevIndex, destIndex) {
   currentIndex.value = newIndex;
+}
+
+function changeSlide(index){
+  splideEl.go(index);
 }
 const onSwiper = (swiper) => {
   console.log(swiper);
@@ -1052,17 +1056,12 @@ const onSlideChange = () => {
 };
 
 const currentTab = ref("Bill Payment");
-
-const modules = [Navigation, Pagination, Scrollbar, A11y];
 </script>
-<style>
-.hidden {
-  display: none !important;
+
+<style scoped>
+.border-zain-primary{
+  border: 1.5px solid var(--ion-color-primary)
 }
-.border-zain{
-  border: 1.5px solid var(--ion-color-primary);
-}
-.border-zain-medium{
-    border: 1.5px solid #aaaaaa14;
-}
+.border-zain-lightgray{ border: 1.5px solid var(--ion-color-lightgray); }
+
 </style>
