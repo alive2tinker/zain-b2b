@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router';
+import VueSplide from "@splidejs/vue-splide";
 
 import { IonicVue } from '@ionic/vue';
 
@@ -25,11 +26,14 @@ import './theme/variables.css';
 import './assets/tailwind.css';
 import store from './store'
 
+import "@splidejs/vue-splide/css";
+
 const app = createApp(App).use(store)
   .use(IonicVue, {
     mode: 'md',
     rippleEffect: false
   })
+  .use(VueSplide)
   .use(router);
 
 router.isReady().then(() => {

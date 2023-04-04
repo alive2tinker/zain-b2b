@@ -137,29 +137,6 @@ input.number-input:focus~.number-label {
     border: 2px solid var(--ion-color-primary);
 }
 
-@media (min-width: 640px){
-    .swiper-container{
-        height: 340px !important;
-    }
-    .swiper-image{
-        height: 300px !important;
-    }
-    .swiper-slide{
-        height: 320px !important;
-    }
-}
-@media (min-width: 768px){
-    .swiper-container{
-        height: 520px !important;
-    }
-    .swiper-image{
-        height: 470px !important;
-    }
-    .swiper-slide{
-        height: 500px !important;
-    }
-}
-
 .payment-tabs:hover{
     --background-hover: white !important;
 }
