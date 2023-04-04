@@ -22,6 +22,19 @@
                 alt="Sample 1"
               />
             </SplideSlide>
+            <SplideSlide>
+              <img
+                class="rounded-xl sm:hidden"
+                src="@/assets/images/mobile-1.jpeg"
+                alt="Sample 1"
+              />
+              <img
+                class="rounded-xl hidden sm:block"
+                src="@/assets/images/web-1.jpeg"
+                alt="Sample 1"
+              />
+            </SplideSlide>
+
           </Splide>
           <div class="flex justify-center">
             <div class="space-x-2 mt-3">
@@ -29,8 +42,9 @@
                 v-for="(page, index) in pages"
                 :key="index"
                 :class="{
-                  'w-3 bg-white h-3 rounded-full': true,
-                  'border-zain': currentIndex === index,
+                  'w-3 h-3 rounded-full border-2': true,
+                  'bg-white border-zain': currentIndex === index,
+                  'bg-zinc-200 border-zain-medium': currentIndex !== index,
                 }"
               ></button>
             </div>
@@ -1042,10 +1056,13 @@ const currentTab = ref("Bill Payment");
 const modules = [Navigation, Pagination, Scrollbar, A11y];
 </script>
 <style>
-/* .hidden {
+.hidden {
   display: none !important;
-} */
+}
 .border-zain{
   border: 1.5px solid var(--ion-color-primary);
+}
+.border-zain-medium{
+    border: 1.5px solid #aaaaaa14;
 }
 </style>
