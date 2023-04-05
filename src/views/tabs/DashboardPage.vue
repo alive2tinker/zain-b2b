@@ -51,22 +51,26 @@
         </div>
         <div class="flex my-4 pr-4 justify-between">
           <h3 class="text-lg CairoSemiBold my-2 mx-1">Total Bill</h3>
-          <p class="text-sm mt-3.5 text-zain-primary CairoRegular">Bills Details<span><ion-icon class="absolute pt-1"
+          <p class="text-sm mt-3.5 text-zain-primary CairoRegular">Bills History<span><ion-icon class="absolute pt-1"
                 :icon="chevronForward"></ion-icon></span></p>
         </div>
         <div class="bg-white rounded-xl shadow-0 p-2">
-          <div class="flex justify-between">
-            <h4 class="text-lg CairoSemiBold mt-1 ml-1.5">Total Payment Required</h4>
-            <ion-chip class="bg-red-50 rounded-md" style="background: #F5D3D3; height:23px;">
-              <h6 class="text-zain-red" style="color: #C50000">Unpaid</h6>
+          <div class="px-3 space-y-2">
+            <div class="flex justify-between space-x-4 sm:justify-start">
+            <h4 class="text-lg CairoBold mt-1 ml-1.5">Total Payment Required</h4>
+            <ion-chip class="rounded-md" style="background: #FAe8e8; height:23px;">
+              <h6 class="CairoRegular" style="color: #C50000">Unpaid</h6>
             </ion-chip>
           </div>
           <h5 class="text-3xl text-zain-primary CairoRegular ml-1.5">1401.58<span
               class="text-zain-medium text-base mx-1 CairoBold">SAR</span></h5>
-          <p class="text-zinc-400 text-sm ml-1.5 CairoRegular my-2">15% VAT Inclusive</p>
-          <hr>
-          <p class="CairoRegular py-2 ml-1.5">Pay your bill before <span class="CairoBold">05 April 2021</span></p>
-          <ion-button expand="block" class="btn-primary CairoSemiBold mb-4">Pay Now</ion-button>
+              <p class="text-zinc-400 text-sm ml-1.5 CairoRegular my-2">15% VAT Inclusive</p>
+              <hr>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-12 gap-4 mt-3">
+            <p class="CairoRegular py-2 ml-1.5 mt-2 sm:col-span-7 px-3">Pay your bill before <span class="CairoBold">05 April 2021</span></p>
+          <ion-button expand="block" class="btn-primary sm:col-span-5 CairoSemiBold mb-4">Pay Now</ion-button>
+          </div>
         </div>
         <div class="bg-white rounded-xl shadow-0 my-4 p-6">
           <div class="flex space-x-4">
@@ -86,8 +90,8 @@
             </div>
             <div class="py-1">
               <h5 class="CairoBold">Unbilled Amount</h5>
-              <p class="text-sm CairoLight">Accumulated to be added in the next bill</p>
-              <p class="CairoRegular my-1">365.90 SAR</p>
+              <p class="text-sm text-zain-medium CairoLight">Accumulated to be added in the next bill</p>
+              <p class="CairoRegular mt-1 -mb-3">365.90 SAR</p>
             </div>
           </div>
         </div>
@@ -314,6 +318,7 @@
           </CardComponent>
         </div>
       </div>
+      <FooterComponent/>
     </ion-content>
 </ion-page></template>
 
@@ -323,6 +328,7 @@ import HeaderContainer from '@/components/HeaderContainer.vue';
 import { chevronDown, chevronForward, close } from 'ionicons/icons';
 import { ref } from 'vue';
 import CardComponent from '@/components/CardComponent.vue';
+import FooterComponent from "@/components/FooterComponent.vue";
 
 const crnOpen = ref(true);
 </script>

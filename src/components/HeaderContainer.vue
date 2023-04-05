@@ -1,6 +1,6 @@
 <template>
   <ion-header class="ion-no-border bg-white border-b border-gray-200">
-    <div class="max-w-4xl mx-auto px-4">
+    <div class="max-w-7xl mx-auto px-4">
       <ion-toolbar>
         <ion-title>
           <svg width="70" height="38" viewBox="0 0 70 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,10 +52,9 @@
       </ion-toolbar>
     </div>
     <div class="w-screen bg-white border-t hidden sm:block border-b border-gray-200">
-      <div class="max-w-4xl mx-auto">
-        <ion-tab-bar slot="bottom">
+      <ion-tab-bar slot="bottom">
           <ion-tab-button class="top-nav-btn" tab="home" href="/tabs/home">
-            <div :class="{ 'flex space-x-2 p-2 rounded-md': true, 'bg-zain-primary text-white': currentTab === 'home' }">
+            <div :class="{ 'flex space-x-2 py-2 px-6 rounded-md': true, 'bg-zain-primary text-white': currentTab === 'home' }">
               <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M3.33496 9.62988V15.3412C3.33496 16.998 4.67811 18.3412 6.33496 18.3412H13.6683C15.3251 18.3412 16.6683 16.998 16.6683 15.3412V9.62988"
@@ -67,13 +66,13 @@
                 <path d="M11.6683 18.3414V13.7783H8.33496V18.3414" :stroke="currentTab === 'home' ? 'white' : '#323232'"
                   stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
-              <p class="mt-0.5">HOME</p>
+              <p class="CairoSemiBold mt-0.5">Explore</p>
             </div>
           </ion-tab-button>
 
           <ion-tab-button class="top-nav-btn" tab="dashboard" href="/tabs/dashboard">
             <div
-              :class="{ 'flex space-x-2 p-2 rounded-md': true, 'bg-zain-primary text-white': currentTab === 'dashboard' }">
+              :class="{ 'flex space-x-2 py-2 px-6 rounded-md': true, 'bg-zain-primary text-white': currentTab === 'dashboard' }">
               <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.66504 17.0969L18.3317 17.0969" :stroke="currentTab === 'dashboard' ? 'white' : '#323232'" stroke-width="1.3" stroke-linecap="round"
                   stroke-linejoin="round" />
@@ -85,13 +84,13 @@
                   :stroke="currentTab === 'dashboard' ? 'white' : '#323232'" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
 
-              <p class="mt-0.5">Dashboard</p>
+              <p class="CairoSemiBold mt-0.5">Dashboard</p>
             </div>
           </ion-tab-button>
 
           <ion-tab-button class="top-nav-btn" tab="support" href="/tabs/support">
             <div
-              :class="{ 'flex space-x-2 p-2 rounded-md': true, 'bg-zain-primary text-white': currentTab === 'support' }">
+              :class="{ 'flex space-x-2 py-2 px-6 rounded-md': true, 'bg-zain-primary text-white': currentTab === 'support' }">
               <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M10.0016 11.9112V11.7038C10.0016 11.026 10.4224 10.6584 10.8441 10.3763C11.2558 10.1001 11.6683 9.74 11.6683 9.07628C11.6683 8.15953 10.9224 7.41699 10.0016 7.41699C9.08079 7.41699 8.33496 8.15953 8.33496 9.07628" :stroke="currentTab === 'support' ? 'white' : '#323232'" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
 <ellipse cx="9.99838" cy="10.8746" rx="8.33334" ry="8.29646" :stroke="currentTab === 'support' ? 'white' : '#323232'" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -99,21 +98,20 @@
 </svg>
 
 
-              <p class="mt-0.5">Support</p>
+              <p class="CairoSemiBold mt-0.5">Help</p>
             </div>
           </ion-tab-button>
 
           <ion-tab-button class="top-nav-btn" tab="settings" href="/tabs/settings">
-            <div :class="{ 'flex space-x-2 p-2 rounded-md': true, 'bg-zain-primary text-white': currentTab === 'settings' }">
+            <div :class="{ 'flex space-x-2 py-2 px-6 rounded-md': true, 'bg-zain-primary text-white': currentTab === 'settings' }">
               <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M17.7681 9.07101H16.6409C16.4799 8.5099 16.2383 7.94878 15.9968 7.46783L16.8019 6.66624C17.0435 6.42576 17.0435 6.10512 16.8019 5.86465L15.0306 4.10115C14.789 3.86067 14.467 3.86067 14.2254 4.10115L13.4203 4.90274C12.9372 4.5821 12.3736 4.42178 11.81 4.26147V3.13924C11.81 2.8186 11.5684 2.57812 11.2464 2.57812H8.75039C8.42833 2.57812 8.18679 2.8186 8.18679 3.13924V4.26147C7.62318 4.42178 7.05957 4.66226 6.57648 4.90274L5.77132 4.10115C5.52978 3.86067 5.20772 3.86067 4.96617 4.10115L3.19483 5.86465C2.95329 6.10512 2.95329 6.42576 3.19483 6.66624L3.99999 7.46783C3.67792 7.94878 3.51689 8.5099 3.35586 9.07101H2.22865C1.90659 9.07101 1.66504 9.31149 1.66504 9.63212V12.1171C1.66504 12.4377 1.90659 12.6782 2.22865 12.6782H3.35586C3.51689 13.2393 3.75844 13.8004 3.99999 14.2813L3.19483 15.0829C2.95329 15.3234 2.95329 15.6441 3.19483 15.8845L4.96617 17.648C5.20772 17.8885 5.52978 17.8885 5.77132 17.648L6.57648 16.8464C7.05957 17.1671 7.62318 17.3274 8.18679 17.4877V18.6099C8.18679 18.9306 8.42833 19.1711 8.75039 19.1711H11.2464C11.5684 19.1711 11.81 18.9306 11.81 18.6099V17.4877C12.3736 17.3274 12.9372 17.0869 13.4203 16.8464L14.2254 17.648C14.467 17.8885 14.789 17.8885 15.0306 17.648L16.8019 15.8845C17.0435 15.6441 17.0435 15.3234 16.8019 15.0829L15.9968 14.2813C16.3188 13.8004 16.4799 13.2393 16.6409 12.6782H17.7681C18.0902 12.6782 18.3317 12.4377 18.3317 12.1171V9.63212C18.3317 9.31149 18.0902 9.07101 17.7681 9.07101ZM10.0386 13.8004C8.42833 13.8004 7.14009 12.5178 7.14009 10.9147C7.14009 9.31149 8.42833 8.02894 10.0386 8.02894C11.6489 8.02894 12.9372 9.31149 12.9372 10.9147C12.9372 12.5178 11.6489 13.8004 10.0386 13.8004Z" :stroke="currentTab === 'settings' ? 'white' : '#323232'" stroke-width="1.3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 
-<p class="mt-0.5">Settings</p>
+<p class="CairoSemiBold mt-0.5">Settings</p>
             </div>
           </ion-tab-button>
         </ion-tab-bar>
-      </div>
     </div>
     <slot name="authentication"></slot>
   </ion-header>

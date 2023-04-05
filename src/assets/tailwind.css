@@ -114,7 +114,7 @@ input.number-input:focus::placeholder {
     margin-top: 0.5rem;
     position: absolute;
     font-size: 16px;
-    transition: margin ease-in-out 0.3s;
+    transition: margin ease-in-out 0.1s;
 
 }
 

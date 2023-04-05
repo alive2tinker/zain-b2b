@@ -283,6 +283,7 @@
         <p class="text-center CairoLight text-sm text-zinc-500">Version 3.6 (325)</p>
       </div>
     </div>
+    <FooterComponent />
   </ion-content>
 </ion-page></template>
 
@@ -290,4 +291,5 @@
 import { IonPage, IonContent } from '@ionic/vue';
 import HeaderContainer from '@/components/HeaderContainer.vue';
 import CardComponent from '@/components/CardComponent.vue';
+import FooterComponent from "@/components/FooterComponent.vue";
 </script>

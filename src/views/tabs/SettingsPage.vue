@@ -36,7 +36,7 @@
               d="M28 29V30.333C28 31.254 27.254 32 26.333 32H14.667C13.746 32 13 31.254 13 30.333V18.667C13 17.746 13.746 17 14.667 17H16"
               stroke="#669933" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
-          <div>
+          <div class="mt-0.5 space-y-1">
             <p class="text-sm CairoBold">Zain Lines Management</p>
             <p class="text-xs CairoRegular">My lines, managed lines, add a new line</p>
           </div>
@@ -57,7 +57,7 @@
               stroke="#669933" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
 
-          <div>
+          <div class="mt-0.5 space-y-1">
             <p class="text-sm  CairoBold">Payment Management</p>
             <p class="text-xs  CairoRegular">Wallet & cards, auto payments</p>
           </div>
@@ -83,7 +83,7 @@
           </svg>
 
 
-          <div>
+          <div class="mt-0.5 space-y-1">
             <p class="text-sm  CairoBold">Notification Settings</p>
             <p class="text-xs  CairoRegular">Explore, line dashboard, help, more</p>
           </div>
@@ -110,7 +110,7 @@
 
 
 
-          <div>
+          <div class="mt-0.5 space-y-1">
             <p class="text-sm  CairoBold">Security Management</p>
             <p class="text-xs  CairoRegular">Sessions, numbers & account security</p>
           </div>
@@ -135,7 +135,7 @@
 
 
 
-          <div>
+          <div class="mt-0.5 space-y-1">
             <p class="text-sm  CairoBold">Account History</p>
             <p class="text-xs  CairoRegular">All activities under your account</p>
           </div>
@@ -174,7 +174,7 @@
 
 
 
-          <div>
+          <div class="mt-0.5 space-y-1">
             <p class="text-sm  CairoBold">Order Tracking</p>
             <p class="text-xs  CairoRegular">Check your orders status</p>
           </div>
@@ -197,7 +197,7 @@
               stroke="#669933" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M13 23H31" stroke="#669933" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
-          <div>
+          <div class="mt-0.5 space-y-1">
             <p class="text-sm  CairoBold">Language</p>
             <p class="text-xs  CairoRegular">English</p>
           </div>
@@ -221,7 +221,7 @@
               stroke="#C50000" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
 
-          <div>
+          <div class="mt-0.5 space-y-1">
             <p class="text-sm  CairoMedium text-zain-red mt-2.5">Log Out</p>
           </div>
           <div class="flex" style="margin-left:auto">
@@ -233,12 +233,14 @@
 
         <p class="text-center CairoRegular text-zinc-400 py-4">Version 3.6.25</p>
       </div>
+      <FooterComponent/>
     </ion-content>
   </ion-page>
 </template>
 
 <script setup lang="ts">
-import { IonPage, IonContent, IonIcon, IonButtons, IonButton } from '@ionic/vue';
+import { IonPage, IonContent, IonIcon } from '@ionic/vue';
 import { chevronForward } from 'ionicons/icons';
 import HeaderContainer from '@/components/HeaderContainer.vue';
+import FooterComponent from "@/components/FooterComponent.vue";
 </script>

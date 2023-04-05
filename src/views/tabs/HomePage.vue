@@ -3,7 +3,7 @@
     <HeaderContainer></HeaderContainer>
     <ion-content :fullscreen="true" id="ion-content-home">
       <div class="bg-white md:rounded-xl p-4">
-        <div class="max-w-4xl mx-auto">
+        <div class="max-w-screen-2xl mx-auto px-7">
           <Splide
             :options="splideOptions"
             @splide:pagination:mounted="hideDefaultPagination"
@@ -36,6 +36,8 @@
             </SplideSlide>
 
           </Splide>
+        </div>
+        <div class="max-w-4xl mx-auto">
           <div class="flex justify-center">
             <div class="space-x-2 mt-3">
               <button
@@ -52,13 +54,13 @@
           </div>
         </div>
       </div>
-      <div class="max-w-4xl mx-auto px-4">
+      <div class="max-w-7xl mx-auto px-7">
         <div
           class="bg-white rounded-xl hidden sm:flex my-4 shadow-0 p-3 justify-between"
         >
           <div>
             <h4 class="CairoSemiBold text-lg">Login or Register</h4>
-            <p class="text-sm text-gray-400 CairoLight">Anyone can join</p>
+            <p class="text-sm text-zain-medium CairoLight">Anyone can join</p>
           </div>
           <div class="flex my-auto">
             <svg
@@ -153,8 +155,8 @@
                     currentTab === 'Bill Payment',
                   'shadow-0 text-zain-medium': currentTab !== 'Bill Payment',
                 }"
-                @click="currentTab = 'Bill Payment'"
-                >Bill Payment</ion-button
+                @click="changeCurrentTab('Bill Payment')"
+                >Pay For My Company</ion-button
               >
               <ion-button
                 fill="clear"
@@ -164,8 +166,8 @@
                     currentTab === 'Recharge',
                   'shadow-0 text-zain-medium': currentTab !== 'Recharge',
                 }"
-                @click="currentTab = 'Recharge'"
-                >Recharge</ion-button
+                @click="changeCurrentTab('Recharge')"
+                >Pay For My Line</ion-button
               >
             </div>
             <div class="grid grid-cols-12 gap-4 mt-4">
@@ -175,16 +177,16 @@
                   style="width: 100%; height: 50px"
                 >
                   <input
-                    class="number-input CairoRegular focus:mt-1"
+                    class="number-input w-full h-12 CairoRegular placeholder:pl-1 focus:mt-1"
                     type="tel"
                     id="pay-bill-number-input"
-                    placeholder="1XXXXXXXXX"
+                    :placeholder="inputPlaceholder"
                   />
                   <label
                     for="pay-bill-number-input"
-                    class="number-label CairoLight left-5 px-1"
+                    class="number-label CairoLight left-7 px-1"
                     style="font-family: CairoRegular !important"
-                    >Type Account number</label
+                    >{{ numberInputLabel }}</label
                   >
                 </div>
               </div>
@@ -999,13 +1001,8 @@
           </CardComponent>
         </div>
       </div>
-      <div
-        style="background-color: var(--ion-color-primary)"
-        class="w-screen hidden sm:flex p-3 flex text-white"
-      >
-        <p class="CairoRegular">Version 3.5.3</p>
-        <p class="CairoRegular mx-auto">© 2023 Zain KSA</p>
-      </div>
+      <FooterComponent class="mt-2">
+      </FooterComponent>
     </ion-content>
   </ion-page>
 </template>
@@ -1020,6 +1017,7 @@ import {
   IonIcon,
 } from "@ionic/vue";
 import HeaderContainer from "@/components/HeaderContainer.vue";
+import FooterComponent from "@/components/FooterComponent.vue";
 import CardComponent from "@/components/CardComponent.vue";
 import { chevronForward } from "ionicons/icons";
 import { ref } from "vue";
@@ -1032,6 +1030,20 @@ const splideOptions = {
 };
 const currentIndex = ref(0);
 const pages = ref(0);
+
+let numberInputLabel = 'Account Number';
+let inputPlaceholder = '1XXXXXXXXX';
+
+function changeCurrentTab(tab){
+  currentTab.value = tab;
+  if(currentTab.value == 'Recharge'){
+    numberInputLabel = 'Line Number';
+    inputPlaceholder = '05XXXXXXXX';
+  }else{
+    numberInputLabel = 'Account Number';
+    inputPlaceholder = '1XXXXXXXXX';
+  }
+}
 
 let splideEl = null;
 
