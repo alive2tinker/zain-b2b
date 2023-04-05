@@ -30,7 +30,7 @@
         </div>
       </template>
     </HeaderContainer>
-    <ion-content :fullscreen="true">
+    <ion-content :fullscreen="true" id="ion-content-dashboard">
       <div class="max-w-4xl mx-auto px-4 py-7">
         <div class="bg-white shadow-0 rounded-xl p-3" v-show="crnOpen">
           <ion-icon :icon="close" @click="crnOpen = false" class="float-right rtl:float-left"></ion-icon>

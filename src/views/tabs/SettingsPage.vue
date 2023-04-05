@@ -17,7 +17,7 @@
         </div>
       </template>
     </HeaderContainer>
-    <ion-content :fullscreen="true">
+    <ion-content :fullscreen="true" id="ion-content-settings">
       <div class="max-w-4xl mt-7 mx-auto px-4 space-y-4">
         <!-- Zain Line Management-->
         <div class="rounded-xl flex space-x-4 rounded-md bg-white shadow-0 p-4 mx-2 py-4">

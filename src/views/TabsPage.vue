@@ -3,7 +3,7 @@
     <ion-tabs @ionTabsDidChange="handleTabChange">
       <ion-router-outlet></ion-router-outlet>
       <ion-tab-bar slot="bottom" class="md:hidden">
-        <ion-tab-button tab="home" href="/tabs/home">
+        <ion-tab-button @click="getToTop('home')" tab="home" href="/tabs/home">
           <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="36" height="36" rx="10" :fill="currentTab === 'home' ? 'currentColor' : 'white'" />
             <path d="M10 16.5V24C10 25.6569 11.3431 27 13 27H23C24.6569 27 26 25.6569 26 24V16.5"
@@ -16,7 +16,7 @@
           </svg>
         </ion-tab-button>
 
-        <ion-tab-button tab="dashboard" href="/tabs/dashboard">
+        <ion-tab-button @click="getToTop('dashboard')" tab="dashboard" href="/tabs/dashboard">
           <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="36" height="36" rx="10" :fill="currentTab === 'dashboard' ? 'currentColor' : 'white'" />
             <path d="M8 25.5L28 25.5" :stroke="currentTab === 'dashboard' ? 'white' : '#323232'" stroke-width="1.3"
@@ -33,7 +33,7 @@
           </svg>
         </ion-tab-button>
 
-        <ion-tab-button tab="support" href="/tabs/support">
+        <ion-tab-button @click="getToTop('support')" tab="support" href="/tabs/support">
           <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="36" height="36" rx="10" :fill="currentTab === 'support' ? 'currentColor' : 'white'" />
             <path
@@ -49,7 +49,7 @@
           </svg>
         </ion-tab-button>
 
-        <ion-tab-button tab="settings" href="/tabs/settings">
+        <ion-tab-button @click="getToTop('settings')" tab="settings" href="/tabs/settings">
           <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="36" height="36" rx="10" :fill="currentTab === 'settings' ? 'currentColor' : 'white'" />
             <path
@@ -65,7 +65,7 @@
 
 <script setup lang="ts">
 import { IonTabBar, IonTabButton, IonTabs, IonPage, IonRouterOutlet } from '@ionic/vue';
-import { computed } from 'vue';
+import { computed, ref } from 'vue';
 import { useStore } from 'vuex';
 
 const store = useStore();
@@ -75,4 +75,11 @@ const currentTab = computed(() => store.getters['currentTab']);
 function handleTabChange(e:object) {
   store.dispatch('handleTabChange', e.tab);
 }
+
+function getToTop(tab){
+    const el = document.getElementById(`ion-content-${tab}`);
+    if(el){
+      el.scrollToTop(500);
+    }
+  }
 </script>

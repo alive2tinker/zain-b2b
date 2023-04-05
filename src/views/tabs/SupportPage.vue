@@ -2,7 +2,7 @@
   <ion-page>
     <HeaderContainer>
     </HeaderContainer>
-    <ion-content :fullscreen="true">
+    <ion-content :fullscreen="true" id="ion-content-support">
       <div class="max-w-4xl mt-7 mx-auto px-2 space-y-4 px-4">
         <h3 class="text-2xl CairoSemiBold tracking-normal">How can we help you?</h3>
         <div class="grid grid-cols-2 gap-4">

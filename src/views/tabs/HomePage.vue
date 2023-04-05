@@ -1,7 +1,7 @@
 <template>
   <ion-page>
     <HeaderContainer></HeaderContainer>
-    <ion-content :fullscreen="true">
+    <ion-content :fullscreen="true" id="ion-content-home">
       <div class="bg-white md:rounded-xl p-4">
         <div class="max-w-4xl mx-auto">
           <Splide
