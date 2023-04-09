@@ -283,7 +283,8 @@
         <p class="text-center CairoLight text-sm text-zinc-500">Version 3.6 (325)</p>
       </div>
     </div>
-    <FooterComponent />
+    <FooterComponent class="mt-2 absolute bottom-0">
+      </FooterComponent>
   </ion-content>
 </ion-page></template>
 

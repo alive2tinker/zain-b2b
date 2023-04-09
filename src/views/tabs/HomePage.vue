@@ -150,7 +150,7 @@
               <ion-button
                 fill="clear"
                 :class="{
-                  'w-full normal-case CairoRegular payment-tabs rounded-xl font-cairo bg-white border hover:border-zain-primary hover:bg-white': true,
+                  'w-full normal-case sm:h-10 CairoRegular payment-tabs rounded-xl font-cairo bg-white border hover:border-zain-primary hover:bg-white': true,
                   'border border-zain-primary text-zain-primary CairoBold':
                     currentTab === 'Bill Payment',
                   'shadow-0 text-zain-medium': currentTab !== 'Bill Payment',
@@ -161,7 +161,7 @@
               <ion-button
                 fill="clear"
                 :class="{
-                  'w-full normal-case CairoRegular payment-tabs rounded-xl font-cairo bg-white border hover:border-zain-primary hover:bg-white': true,
+                  'w-full normal-case sm:h-10 CairoRegular payment-tabs rounded-xl font-cairo bg-white border hover:border-zain-primary hover:bg-white': true,
                   'border border-zain-primary text-zain-primary CairoBold':
                     currentTab === 'Recharge',
                   'shadow-0 text-zain-medium': currentTab !== 'Recharge',
@@ -1001,7 +1001,7 @@
           </CardComponent>
         </div>
       </div>
-      <FooterComponent class="mt-2">
+      <FooterComponent class="mt-2 absolute">
       </FooterComponent>
     </ion-content>
   </ion-page>
