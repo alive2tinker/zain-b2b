@@ -5,7 +5,7 @@
         <div class="border-t border-zinc-200">
           <div class="max-w-4xl mx-auto flex px-5 py-3">
             <div>
-            <p class="CairoBold">Mohammad Alasqah</p>
+            <p class="CairoBold">Hailah Alrashed</p>
             <p class="text-zain-primary CairoRegular text-sm">Edit Account Details</p>
           </div>
           <div class="flex ml-auto">
@@ -18,7 +18,7 @@
       </template>
     </HeaderContainer>
     <ion-content :fullscreen="true" id="ion-content-settings">
-      <div class="max-w-4xl mt-7 mx-auto px-4 space-y-4">
+      <div class="max-w-4xl mt-7 mx-auto px-4 space-y-4 4xl:min-h-[80vh]">
         <!-- Zain Line Management-->
         <div class="rounded-xl flex space-x-4 rounded-md bg-white shadow-0 p-4 mx-2 py-4">
           <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
