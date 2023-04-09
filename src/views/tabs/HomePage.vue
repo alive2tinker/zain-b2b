@@ -60,7 +60,7 @@
           class="bg-white rounded-xl hidden sm:flex my-4 shadow-0 p-5 4xl:p-6 justify-between"
         >
           <div>
-            <h4 class="CairoSemiBold text-lg 4xl:text-2xl 4xl:CairoBold">Login or Register</h4>
+            <h4 class="CairoSemiBold text-lg 4xl:text-xl 4xl:CairoBold">Login or Register</h4>
             <p class="text-sm text-zain-medium CairoLight 4xl:text-[20px] pt-[6px] 4xl:CairoRegular">Anyone can join</p>
           </div>
           <div class="flex my-auto">
@@ -150,9 +150,9 @@
                 </svg>
               </div>
               <div>
-                <h5 class="CairoBold text-base lg:text-2xl text-black">
+                <p class="CairoBold 4xl:text-[20px] text-black">
                   Pay Bill or Recharge Line
-                </h5>
+                </p>
                 <p class="CairoRegular text-black 4xl:text-lg">Select Line Type</p>
               </div>
             </div>
