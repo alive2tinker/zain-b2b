@@ -51,7 +51,7 @@
         </ion-buttons>
       </ion-toolbar>
     </div>
-    <div class="w-screen bg-white border-t 4xl:py-5 hidden sm:block border-b border-gray-200">
+    <div class="w-screen bg-white border-t 4xl:py-4 hidden sm:block border-b border-gray-200">
       <ion-tab-bar slot="bottom">
           <ion-tab-button class="top-nav-btn" tab="home" href="/tabs/home">
             <div :class="{ 'flex space-x-2 py-2 px-6 rounded-md': true, 'bg-zain-primary text-white': currentTab === 'home' }">
