@@ -1,6 +1,6 @@
 <template>
   <ion-header class="ion-no-border bg-white border-b border-gray-200">
-    <div class="max-w-7xl mx-auto px-4">
+    <div class="px-4 4xl:py-4">
       <ion-toolbar>
         <ion-title>
           <svg width="70" height="38" viewBox="0 0 70 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,7 +51,7 @@
         </ion-buttons>
       </ion-toolbar>
     </div>
-    <div class="w-screen bg-white border-t 4xl:py-4 hidden sm:block border-b border-gray-200">
+    <div class="w-screen bg-white border-t 4xl:py-4 hidden sm:block border-b border-t-gray-200 border-b-gray-100">
       <ion-tab-bar slot="bottom">
           <ion-tab-button class="top-nav-btn" tab="home" href="/tabs/home">
             <div :class="{ 'flex space-x-2 py-2 px-6 rounded-md': true, 'bg-zain-primary text-white': currentTab === 'home' }">
