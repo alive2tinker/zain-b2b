@@ -5,43 +5,9 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: CairoExtraLight;
-    src: url("./fonts/Cairo-ExtraLight.ttf") format(truetype);
-}
-
-@font-face {
-    font-family: CairoLight;
-    src: url("./fonts/Cairo-Light.ttf") format(truetype);
-}
-
-@font-face {
-    font-family: CairoRegular;
-    src: url("./fonts/Cairo-Regular.ttf") format(truetype);
-}
-
-@font-face {
-    font-family: CairoMedium;
-    src: url("./fonts/Cairo-Medium.ttf") format(truetype);
-}
-
-@font-face {
-    font-family: CairoSemiBold;
-    src: url("./fonts/Cairo-SemiBold.ttf");
-}
-
-@font-face {
-    font-family: CairoBold;
-    src: url("./fonts/Cairo-Bold.ttf") format(truetype);
-}
-
-@font-face {
-    font-family: CairoExtraBold;
-    src: url("./fonts/Cairo-ExtraBold.ttf") format(truetype);
-}
-
-@font-face {
-    font-family: CairoBlack;
-    src: url("./fonts/Cairo-Black.ttf") format(truetype);
+    font-family: Cairo;
+    src: url("../assets/fonts/Cairo.ttf") format("truetype-variations");
+    font-weight: 1 999;
 }
 
 @layer {
@@ -49,36 +15,8 @@
         box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.05);
     }
 
-    .CairoExtraLight {
-        font-family: CairoExtraLight;
-    }
-
-    .CairoLight {
-        font-family: CairoLight;
-    }
-
-    .CairoRegular {
-        font-family: CairoRegular;
-    }
-
-    .CairoMedium {
-        font-family: CairoMedium;
-    }
-
-    .CairoSemiBold {
-        font-family: CairoSemiBold;
-    }
-
-    .CairoBold {
-        font-family: CairoBold;
-    }
-
-    .CairoExtraBold {
-        font-family: CairoExtraBold;
-    }
-
-    .CairoBlack {
-        font-family: CairoBlack;
+    .cairo{
+        font-family: Cairo;
     }
 
     .btn-primary {
@@ -89,6 +27,10 @@
 
 ion-content {
     --ion-background-color: #f9f9f9;
+}
+
+ion-content, ion-button, ion-toolbar, ion-tab-bar{
+    font-family: Cairo;
 }
 
 .swiper-pagination-bullet-active {

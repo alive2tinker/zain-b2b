@@ -55,13 +55,13 @@
           </div>
         </div>
       </div>
-      <div class="max-w-screen-2xl mx-auto px-7">
+      <div class="max-w-6xl mx-auto px-7">
         <div
           class="bg-white rounded-xl hidden sm:flex my-4 shadow-0 p-5 4xl:p-6 justify-between"
         >
           <div>
-            <h4 class="CairoSemiBold text-lg 4xl:text-xl 4xl:CairoBold">Login or Register</h4>
-            <p class="text-sm text-zain-medium CairoLight 4xl:text-[20px] pt-[6px] 4xl:CairoRegular">Anyone can join</p>
+            <h4 class="font-semibold text-lg 4xl:text-xl 4xl:font-bold">Login or Register</h4>
+            <p class="text-sm text-zain-medium font-light 4xl:text-[20px] pt-[6px] 4xl:">Anyone can join</p>
           </div>
           <div class="flex my-auto">
             <svg
@@ -101,11 +101,11 @@
 </svg>
           </div>
         </div>
-        <h3 class="CairoSemiBold 4xl:CairoBlack font-bold text-lg 4xl:text-2xl my-6 mx-1">
+        <h3 class="font-semibold 4xl:CairoBlack font-bold text-lg 4xl:text-2xl my-6 mx-1">
           QuickPay
         </h3>
-        <!-- height should be 350px; -->
-        <ion-card class="bg-white shadow-0 rounded-xl m-0 p-4">
+         <!-- height should be 350px; -->
+         <ion-card class="sm:hidden bg-white shadow-0 rounded-xl m-0 p-4">
           <ion-card-content class="4xl:space-y-7 4xl:py-7 ">
             <div class="flex space-x-3">
               <div>
@@ -150,18 +150,18 @@
                 </svg>
               </div>
               <div>
-                <p class="CairoBold 4xl:text-[20px] text-black">
+                <p class="font-bold 4xl:text-[20px] text-black">
                   Pay Bill or Recharge Line
                 </p>
-                <p class="CairoRegular text-black 4xl:text-lg">Select Line Type</p>
+                <p class=" text-black 4xl:text-lg">Select Line Type</p>
               </div>
             </div>
             <div class="grid grid-cols-2 gap-4 my-2">
               <ion-button
                 fill="clear"
                 :class="{
-                  'w-full normal-case sm:h-10 h-[60px] CairoSemiBold payment-tabs rounded-xl font-cairo bg-white border hover:border-zain-primary hover:bg-white': true,
-                  'border border-zain-primary text-zain-primary CairoBold':
+                  'w-full normal-case sm:h-10 h-[60px] font-semibold payment-tabs rounded-xl font-cairo bg-white border hover:border-zain-primary hover:bg-white': true,
+                  'border border-zain-primary text-zain-primary font-bold':
                     currentTab === 'Bill Payment',
                   'shadow-0 text-zain-medium': currentTab !== 'Bill Payment',
                 }"
@@ -171,8 +171,8 @@
               <ion-button
                 fill="clear"
                 :class="{
-                  'w-full normal-case sm:h-10 h-[60px] CairoRegular payment-tabs rounded-xl font-cairo bg-white border hover:border-zain-primary hover:bg-white': true,
-                  'border border-zain-primary text-zain-primary CairoBold':
+                  'w-full normal-case sm:h-10 h-[60px]  payment-tabs rounded-xl font-cairo bg-white border hover:border-zain-primary hover:bg-white': true,
+                  'border border-zain-primary text-zain-primary font-bold':
                     currentTab === 'Recharge',
                   'shadow-0 text-zain-medium': currentTab !== 'Recharge',
                 }"
@@ -187,15 +187,15 @@
                   style="width: 100%; height: 50px"
                 >
                   <input
-                    class="number-input w-full h-12 CairoRegular placeholder:pl-1 focus:mt-1"
+                    class="number-input w-full h-12  placeholder:pl-1 focus:mt-1"
                     type="tel"
                     id="pay-bill-number-input"
                     :placeholder="inputPlaceholder"
                   />
                   <label
                     for="pay-bill-number-input"
-                    class="number-label CairoLight left-7 px-1"
-                    style="font-family: CairoRegular !important"
+                    class="number-label font-light left-7 px-1"
+                    style="font-family:  !important"
                     >{{ numberInputLabel }}</label
                   >
                 </div>
@@ -206,25 +206,104 @@
                   id="pay-bill-button"
                   style="height: 50px; --border-radius: 10px"
                 >
-                  <p class="hidden md:block CairoRegular">Proceed</p>
+                  <p class="hidden md:block ">Proceed</p>
                   <ion-icon :icon="chevronForward"></ion-icon>
                 </ion-button>
               </div>
             </div>
             <ion-button
               fill="clear"
-              class="text-zain-primary normal-case CairoRegular -ml-3 p-0"
+              class="text-zain-primary normal-case  -ml-3 p-0"
               style="height: 15px"
               >I don’t know my number</ion-button
             >
           </ion-card-content>
         </ion-card>
-        <h3 class="CairoSemiBold 4xl:CairoBlack font-bold text-lg 4xl:text-2xl mt-10 mb-6 mx-1">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="bg-white rounded-xl shadow-0 p-4">
+              <div class="flex space-x-3">
+                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="45" height="45" rx="10" fill="#70A838"/>
+<path d="M27 29.5H29" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M30 32H26C24.895 32 24 31.105 24 30V23C24 21.895 24.895 21 26 21H30C31.105 21 32 21.895 32 23V30C32 31.105 31.105 32 30 32Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M24 18H14V16.4L19 14L24 16.4V18Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 24H21" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 24V18" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 24V18" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 24V18" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 32H15.714C14.768 32 14 31.232 14 30.286V28" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27 14H30.286C31.232 14 32 14.768 32 15.714V18" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<div>
+  <h4 class="font-bold">Pay your company bill</h4>
+  <p class="text-sm font-light">Pay all your company bills with a single click</p>
+</div>
+              </div>
+              <div class="pt-4">
+                <div
+                  class="rounded-lg border relative border-gray-300 px-2 number-input-container"
+                  style="width: 100%; height: 50px"
+                >
+                  <input
+                    class="number-input w-full h-12  placeholder:pl-1 focus:mt-1"
+                    type="tel"
+                    id="pay-bill-number-input"
+                    :placeholder="inputPlaceholder"
+                  />
+                  <label
+                    for="pay-bill-number-input"
+                    class="number-label font-light absolute left-3 px-1"
+                    style="font-family:  !important"
+                    >{{ numberInputLabel }}</label
+                  >
+                </div>
+                <ion-button expand="block" class="h-12 my-4" style="--border-radius:10px;">Proceed to Pay</ion-button>
+                <p class=" text-base text-zain-primary">What does “pay all bills” mean?</p>
+              </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-0 p-4">
+              <div class="flex space-x-3">
+                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="45" height="45" rx="10" fill="#70A838"/>
+<path d="M25 26V30.129C25 31.162 24.162 32 23.129 32H15.871C14.838 32 14 31.162 14 30.129V15.871C14 14.838 14.838 14 15.871 14H23.128C24.162 14 25 14.838 25 15.871V18" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.3008 29.5H21.7008" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21.333 18H30.666C31.403 18 32 18.597 32 19.333V24.666C32 25.403 31.403 26 30.667 26H21.334C20.597 26 20 25.403 20 24.667V19.333C20 18.597 20.597 18 21.333 18Z" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 21H32" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+<div>
+  <h4 class="font-bold">Pay your line bill</h4>
+  <p class="text-sm font-light">Pay your line bills or overdue payments</p>
+</div>
+              </div>
+              <div class="pt-4">
+                <div
+                  class="rounded-lg border relative border-gray-300 px-2 number-input-container"
+                  style="width: 100%; height: 50px"
+                >
+                  <input
+                    class="number-input w-full h-12  placeholder:pl-1 focus:mt-1"
+                    type="tel"
+                    id="pay-bill-number-input"
+                    :placeholder="inputPlaceholder"
+                  />
+                  <label
+                    for="pay-bill-number-input"
+                    class="number-label font-light absolute left-3 px-1"
+                    style="font-family:  !important"
+                    >Line Number</label
+                  >
+                </div>
+                <ion-button expand="block" class=" h-12 my-4" style="--border-radius:10px;">Proceed to Pay</ion-button>
+                <p class=" text-base text-zain-primary">I don’t know my number</p>
+              </div>
+            </div>
+        </div>
+        <h3 class="font-semibold 4xl:CairoBlack font-bold text-lg 4xl:text-2xl mt-10 mb-6 mx-1">
           Buy a New Service from Zain
         </h3>
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
           <CardComponent
-            class="col-span-2"
             subtitle="Postpaid & Prepaid"
             title="Zain Mobile Plans"
             style="
@@ -602,108 +681,8 @@
             </template>
           </CardComponent>
           <CardComponent
-            title="Cloud & SaaS Services"
-            subtitle="Calling inside KSA"
-            style="
-              background: linear-gradient(
-                130.55deg,
-                #975e97 0%,
-                rgba(125, 69, 125, 0.77) 100%
-              );
-            "
-          >
-            <template #icon>
-              <svg
-                width="45"
-                height="45"
-                viewBox="0 0 45 45"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  opacity="0.1"
-                  width="45"
-                  height="45"
-                  rx="10"
-                  fill="white"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M17.4448 19.068C14.9592 19.401 13.0382 21.47 13.0382 24C13.0382 26.761 15.32 29 18.1337 29H29.3439C31.5951 29 33.4204 27.209 33.4204 25C33.4204 22.791 31.5951 21 29.3439 21C29.3439 17.686 26.6066 15 23.2293 15C20.5419 15 18.2652 16.703 17.4448 19.068Z"
-                  stroke="white"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </template>
-            <template #pattern>
-              <svg
-                width="114"
-                height="148"
-                viewBox="0 0 114 148"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g opacity="0.2">
-                  <path
-                    opacity="0.2"
-                    d="M133.138 166.773C88.0448 179.546 40.9714 153.252 28.2065 108.159C15.4332 63.0652 41.7277 15.9917 86.8211 3.22692C131.914 -9.54641 178.988 16.7481 191.753 61.8414C204.526 106.935 178.231 154.008 133.138 166.773Z"
-                    fill="white"
-                  />
-                  <path
-                    opacity="0.2"
-                    d="M179.048 65.4365C189.832 103.519 167.626 143.283 129.544 154.068C91.4616 164.853 51.6969 142.646 40.9122 104.564C30.1276 66.4819 52.3343 26.7171 90.4163 15.9325C128.498 5.14782 168.263 27.3545 179.048 65.4365Z"
-                    fill="white"
-                  />
-                  <path
-                    opacity="0.2"
-                    d="M166.342 69.04C175.147 100.111 157.02 132.567 125.94 141.363C94.8696 150.159 62.4137 132.04 53.6177 100.961C44.8217 69.8898 62.9406 37.4338 94.0198 28.6378C125.091 19.8333 157.546 37.9608 166.342 69.0315V69.04Z"
-                    fill="white"
-                  />
-                  <path
-                    opacity="0.2"
-                    d="M153.637 72.6348C160.453 96.7112 146.422 121.833 122.345 128.657C98.269 135.473 73.1472 121.442 66.3314 97.3656C59.5156 73.2892 73.5467 48.1675 97.6231 41.3516C121.699 34.5358 146.821 48.5669 153.646 72.6433L153.637 72.6348Z"
-                    fill="white"
-                  />
-                  <path
-                    opacity="0.2"
-                    d="M140.932 76.2382C145.767 93.3033 135.807 111.116 118.75 115.952C101.685 120.788 83.8724 110.836 79.0367 93.7707C74.201 76.7056 84.1613 58.8927 101.218 54.057C118.283 49.2213 136.096 59.1731 140.932 76.2382Z"
-                    fill="white"
-                  />
-                  <path
-                    opacity="0.2"
-                    d="M128.227 79.8327C131.074 89.895 125.218 100.391 115.147 103.238C105.085 106.085 94.5893 100.229 91.7423 90.1669C88.8953 80.1046 94.7508 69.6089 104.813 66.7619C114.875 63.9149 125.371 69.7704 128.218 79.8327H128.227Z"
-                    fill="white"
-                  />
-                  <path
-                    opacity="0.2"
-                    d="M115.512 83.436C116.379 86.487 114.595 89.674 111.544 90.5408C108.493 91.4077 105.306 89.623 104.439 86.572C103.572 83.521 105.357 80.3341 108.408 79.4672C111.459 78.6004 114.646 80.3851 115.512 83.436Z"
-                    fill="white"
-                  />
-                  <g opacity="0.47">
-                    <path
-                      d="M57.1783 139.884L76.3765 139.901L66.7561 149.521H9.73085L0 139.841L19.2067 139.85L9.63736 130.255L28.4192 130.204L19.1982 120.941L40.2237 120.958L57.3057 121L48.2888 130.195L66.7391 130.221L57.1783 139.884Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M28.6741 111.235H47.5918L38.133 120.932L28.6741 111.235Z"
-                      fill="white"
-                    />
-                  </g>
-                  <path
-                    opacity="0.58"
-                    d="M162.474 110.61C152.698 112.172 146.032 121.355 147.594 131.145C149.156 140.921 158.34 147.586 168.129 146.024C177.905 144.462 184.571 135.279 183.009 125.489C181.447 115.713 172.263 109.048 162.474 110.61ZM167.025 139.13C161.06 140.086 155.431 136.006 154.475 130.04C153.519 124.075 157.599 118.447 163.564 117.491C169.53 116.535 175.158 120.615 176.114 126.58C177.07 132.545 172.99 138.174 167.025 139.13ZM199.867 69.7553C195.235 70.4959 192.084 74.8453 192.825 79.4774C192.865 79.7602 192.933 80.0295 193 80.2988L166.742 98.383C164.722 98.2888 162.662 98.383 160.588 98.7197C153.344 99.8777 147.109 103.554 142.652 108.725L127.544 98.7197C127.894 97.3866 127.935 95.9458 127.571 94.505C126.884 91.758 124.932 89.6574 122.494 88.6744C120.071 87.6375 117.203 87.7318 114.779 89.1995C111.197 91.354 109.77 95.7303 111.224 99.5141L86.0433 120.251C84.1851 119.133 81.8825 118.716 79.6068 119.282C79.5933 119.282 79.5664 119.282 79.5529 119.295L73.2914 109.95C74.5168 108.307 75.1497 106.233 74.9342 104.039C74.4764 99.366 70.3156 95.9592 65.6565 96.4171C60.984 96.8749 57.5772 101.036 58.035 105.695C58.4928 110.367 62.6537 113.774 67.3128 113.316C67.7437 113.276 68.1745 113.195 68.592 113.087L74.8534 122.432C73.3857 124.398 72.7797 126.984 73.4261 129.556C74.5572 134.107 79.1624 136.881 83.7137 135.75C88.2651 134.619 91.039 130.014 89.9079 125.462C89.8406 125.166 89.7463 124.883 89.6521 124.6L114.9 103.81C115.263 104.012 115.627 104.2 116.004 104.348C117.647 105.048 119.532 105.25 121.404 104.779C122.521 104.496 123.518 104.012 124.393 103.379L139.394 113.316C136.068 119.066 134.613 125.96 135.731 133.016C138.33 149.337 153.734 160.499 170.041 157.887C173.488 157.335 176.693 156.217 179.602 154.629C179.736 154.79 179.871 154.952 180.019 155.1L186.159 161.213C188.476 163.516 192.232 163.516 194.535 161.186L194.67 161.052C196.972 158.735 196.972 154.979 194.643 152.676L188.799 146.872C189.23 146.32 189.647 145.755 190.038 145.176C191.451 145.674 193.067 145.095 193.808 143.721C195.585 140.436 196.797 136.854 197.349 133.151C197.901 129.461 197.807 125.678 197.08 122.028C196.353 118.379 194.993 114.851 193.054 111.66C191.128 108.469 188.637 105.627 185.742 103.298C184.597 102.382 182.995 102.436 181.918 103.365C179.656 101.857 177.205 100.659 174.606 99.8104L196.178 84.9579C197.942 86.2641 200.217 86.8835 202.547 86.5064C207.179 85.7658 210.33 81.4165 209.589 76.7843C208.849 72.1522 204.499 69.0013 199.867 69.7419V69.7553ZM137.293 132.787C134.829 117.342 145.386 102.773 160.831 100.309C168.156 99.1371 175.279 100.901 181.016 104.725C180.639 105.87 180.975 107.163 181.958 107.97C184.301 109.896 186.308 112.212 187.856 114.811C189.405 117.41 190.495 120.264 191.061 123.24C191.64 126.216 191.694 129.273 191.223 132.249C190.751 135.225 189.768 138.12 188.314 140.759V140.786C187.681 141.957 187.87 143.344 188.691 144.3C184.449 150.508 177.757 155.046 169.758 156.325C154.313 158.789 139.744 148.232 137.28 132.787H137.293Z"
-                    fill="white"
-                  />
-                </g>
-              </svg>
-            </template>
-          </CardComponent>
-          <CardComponent
-            title="Drone solutions"
-            subtitle="5G & Fiber"
+            title="Digital Solutions"
+            subtitle="Drones & Cloud services"
             style="background: #267d7b"
           >
             <template #icon>
@@ -860,7 +839,7 @@
             </template>
           </CardComponent>
         </div>
-        <h3 class="CairoSemiBold 4xl:CairoBlack font-bold text-lg 4xl:text-2xl mt-10 mb-6 mx-1">
+        <h3 class="font-semibold 4xl:CairoBlack font-bold text-lg 4xl:text-2xl mt-10 mb-6 mx-1">
           Zain World
         </h3>
         <div class="grid grid-cols-2 md:grid-cols-12 my-4 gap-4">
@@ -1067,7 +1046,7 @@ function hideDefaultPagination(splide, data) {
   splideEl = splide;
 }
 
-function updatePagination(splide, newIndex, PrevIndex, destIndex) {
+function updatePagination(splide, newIndex) {
   currentIndex.value = newIndex;
 }
 
