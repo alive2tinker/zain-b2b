@@ -4,7 +4,7 @@
             <slot name="icon"></slot>
         </div>
         <h5 class="absolute bottom-10 text-sm sm:text-lg font-bold">{{ title }}</h5>
-        <h6 class="absolute bottom-6 font-light text-sm break-all">{{ subtitle }}</h6>
+        <h6 class="absolute bottom-6 text-sm break-all">{{ subtitle }}</h6>
         <div class="absolute bottom-0 right-0 rtl:left-0">
             <slot name="pattern"></slot>
         </div>

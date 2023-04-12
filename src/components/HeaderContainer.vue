@@ -1,7 +1,7 @@
 <template>
   <ion-header class="ion-no-border bg-white border-b border-gray-200">
     <div class="px-4 4xl:py-4 h-[60px]">
-      <ion-toolbar>
+      <ion-toolbar class="4xl:border-b-2">
         <ion-title>
           <svg width="70" height="38" viewBox="0 0 70 38" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -51,8 +51,8 @@
         </ion-buttons>
       </ion-toolbar>
     </div>
-    <div class="w-screen bg-white border-t h-[70px] pt-2 4xl:py-4 hidden sm:block border-b border-t-gray-200 border-b-gray-100">
-      <ion-tab-bar slot="bottom">
+    <div class="w-screen bg-white border-t h-[70px] pt-2 4xl:py-4 hidden sm:block border-b border-t-gray-200 4xl:border-b-4">
+      <ion-tab-bar class="4xl:border-b-2" slot="bottom">
           <ion-tab-button class="top-nav-btn" tab="home" href="/tabs/home">
             <div :class="{ 'flex space-x-2 py-2 px-6 rounded-xl': true, 'bg-zain-primary text-white': currentTab === 'home' }">
               <svg class="mt-1" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">

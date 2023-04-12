@@ -3,7 +3,7 @@
     <HeaderContainer></HeaderContainer>
     <ion-content :fullscreen="true" id="ion-content-home">
       <div class="bg-white md:rounded-xl p-2">
-        <div class="max-w-screen-2xl mx-auto px-2">
+        <div class="max-w-screen-2xl mx-auto lg:px-20 md:px-10">
           <Splide
             class="pt-[20px] md:pt-[30px]"
             :options="splideOptions"
@@ -61,10 +61,11 @@
         >
           <div>
             <h4 class="font-semibold text-lg 4xl:text-xl 4xl:font-bold">Login or Register</h4>
-            <p class="text-sm  4xl:text-[20px] pt-[6px]" style="color:#5f5f5f;">Get started and join Zain business now!</p>
+            <p class="text-sm  4xl:text-[20px] pt-[2px]" style="color:#5f5f5f;">Get started and join Zain business now!</p>
           </div>
           <div class="flex my-auto">
             <svg
+            class="mr-3"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -251,7 +252,7 @@
                     >{{ numberInputLabel }}</label
                   >
                 </div>
-                <ion-button expand="block" class="h-12 my-4" style="--border-radius:10px;">Proceed to Pay</ion-button>
+                <ion-button expand="block" class="h-12 my-4" style="--border-radius:10px; --box-shadow: none;">Proceed to Pay</ion-button>
                 <p class=" text-base text-zain-primary">What does “pay all bills” mean?</p>
               </div>
             </div>
@@ -288,7 +289,7 @@
                     >Line Number</label
                   >
                 </div>
-                <ion-button expand="block" class=" h-12 my-4" style="--border-radius:10px;">Proceed to Pay</ion-button>
+                <ion-button expand="block" class=" h-12 my-4" style="--border-radius:10px;--box-shadow: none;">Proceed to Pay</ion-button>
                 <p class=" text-base text-zain-primary">I don’t know my number</p>
               </div>
             </div>
