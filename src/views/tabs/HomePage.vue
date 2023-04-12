@@ -2,10 +2,10 @@
   <ion-page>
     <HeaderContainer></HeaderContainer>
     <ion-content :fullscreen="true" id="ion-content-home">
-      <div class="bg-white md:rounded-xl p-4">
-        <div class="max-w-screen-2xl mx-auto px-7">
+      <div class="bg-white md:rounded-xl p-2">
+        <div class="max-w-screen-2xl mx-auto px-2">
           <Splide
-            class="pt-[45px]"
+            class="pt-[20px] md:pt-[30px]"
             :options="splideOptions"
             @splide:pagination:mounted="hideDefaultPagination"
             @splide:move="updatePagination"
@@ -39,14 +39,14 @@
           </Splide>
         </div>
         <div class="max-w-4xl mx-auto">
-          <div class="flex mt-[25px] mb-[20px] justify-center">
+          <div class="flex sm:mt-[10px] mb-[5px] sm:mb-[15px] justify-center">
             <div class="space-x-2 mt-3">
               <button
                 v-for="(page, index) in pages"
                 @click="changeSlide(index)"
                 :key="index"
                 :class="{
-                  'w-3 h-3 rounded-full': true,
+                  'w-2 h-2 rounded-full': true,
                   'bg-white border-2 border-zain-primary': currentIndex === index,
                   'bg-zinc-200 border-2 border-zain-lightgray': currentIndex !== index,
                 }"
@@ -57,15 +57,14 @@
       </div>
       <div class="max-w-6xl mx-auto px-7">
         <div
-          class="bg-white rounded-xl hidden sm:flex my-4 shadow-0 p-5 4xl:p-6 justify-between"
+          class="bg-white rounded-xl hidden mt-[35px] sm:flex my-4 shadow-0 p-5 4xl:p-6 justify-between"
         >
           <div>
             <h4 class="font-semibold text-lg 4xl:text-xl 4xl:font-bold">Login or Register</h4>
-            <p class="text-sm text-zain-medium font-light 4xl:text-[20px] pt-[6px] 4xl:">Anyone can join</p>
+            <p class="text-sm  4xl:text-[20px] pt-[6px]" style="color:#5f5f5f;">Get started and join Zain business now!</p>
           </div>
           <div class="flex my-auto">
             <svg
-              class="sm:hidden"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -94,20 +93,15 @@
                 stroke-linejoin="round"
               />
             </svg>
-            <svg class="hidden md:block" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.36963 17.5H20.418" stroke="#669933" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M16.041 13.124L20.4178 17.5008L16.041 21.8777" stroke="#669933" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M8.74609 13.3231V10.7889C8.74693 9.39851 9.72867 8.20186 11.0921 7.92935L27.1404 4.41914C28.0361 4.31567 28.9329 4.60336 29.6012 5.20855C30.2696 5.81374 30.6446 6.67769 30.6302 7.5792V27.7126C30.6306 28.5732 30.2511 29.3901 29.5931 29.9448C28.9352 30.4995 28.0659 30.7355 27.2177 30.5896L11.1694 27.8293C9.76877 27.5884 8.74543 26.3735 8.74609 24.9523V21.8345" stroke="#669933" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
           </div>
         </div>
-        <h3 class="font-semibold 4xl:CairoBlack font-bold text-lg 4xl:text-2xl my-6 mx-1">
+        <h3 class="font-semibold 4xl:CairoBlack font-bold text-lg 4xl:text-2xl mt-9 mb-[15px] mx-1">
           QuickPay
         </h3>
          <!-- height should be 350px; -->
-         <ion-card class="sm:hidden bg-white shadow-0 rounded-xl m-0 p-4">
-          <ion-card-content class="4xl:space-y-7 4xl:py-7 ">
-            <div class="flex space-x-3">
+         <div class="sm:hidden bg-white shadow-0 rounded-xl m-0 p-4">
+          <div class="4xl:space-y-7 4xl:py-7 ">
+            <div class="flex space-x-3 mb-5">
               <div>
                 <svg
                   width="45"
@@ -150,40 +144,40 @@
                 </svg>
               </div>
               <div>
-                <p class="font-bold 4xl:text-[20px] text-black">
+                <h5 class="font-bold text-black">
                   Pay Bill or Recharge Line
-                </p>
-                <p class=" text-black 4xl:text-lg">Select Line Type</p>
+                </h5>
+                <p class=" text-black">Select Line Type</p>
               </div>
             </div>
-            <div class="grid grid-cols-2 gap-4 my-2">
-              <ion-button
+            <div class="grid grid-cols-2 gap-2 my-2">
+              <button
                 fill="clear"
                 :class="{
-                  'w-full normal-case sm:h-10 h-[60px] font-semibold payment-tabs rounded-xl font-cairo bg-white border hover:border-zain-primary hover:bg-white': true,
+                  'w-full normal-case sm:h-10 h-[45px] payment-tabs rounded-xl bg-white border hover:border-zain-primary hover:bg-white': true,
                   'border border-zain-primary text-zain-primary font-bold':
                     currentTab === 'Bill Payment',
-                  'shadow-0 text-zain-medium': currentTab !== 'Bill Payment',
+                  'btn-shadow text-zain-medium inactive-border': currentTab != 'Bill Payment',
                 }"
                 @click="changeCurrentTab('Bill Payment')"
-                >Pay For My Company</ion-button
+                ><h6>Contract payment</h6></button
               >
-              <ion-button
+              <button
                 fill="clear"
                 :class="{
-                  'w-full normal-case sm:h-10 h-[60px]  payment-tabs rounded-xl font-cairo bg-white border hover:border-zain-primary hover:bg-white': true,
+                  'w-full normal-case sm:h-10 h-[45px]  payment-tabs rounded-xl bg-white border hover:border-zain-primary hover:bg-white': true,
                   'border border-zain-primary text-zain-primary font-bold':
                     currentTab === 'Recharge',
-                  'shadow-0 text-zain-medium': currentTab !== 'Recharge',
+                  'btn-shadow text-zain-medium inactive-border': currentTab != 'Recharge',
                 }"
                 @click="changeCurrentTab('Recharge')"
-                >Pay For My Line</ion-button
+                ><h5>Line Payment</h5></button
               >
             </div>
             <div class="grid grid-cols-12 gap-4 mt-4">
               <div class="col-span-9">
                 <div
-                  class="rounded-lg border border-gray-300 px-2 number-input-container"
+                  class="rounded-lg border relative border-gray-300 px-2 number-input-container"
                   style="width: 100%; height: 50px"
                 >
                   <input
@@ -194,8 +188,8 @@
                   />
                   <label
                     for="pay-bill-number-input"
-                    class="number-label font-light left-7 px-1"
-                    style="font-family:  !important"
+                    class="number-label left-3 px-1 text-gray-500"
+                    style="font-family:  Cairo!important"
                     >{{ numberInputLabel }}</label
                   >
                 </div>
@@ -217,9 +211,9 @@
               style="height: 15px"
               >I don’t know my number</ion-button
             >
-          </ion-card-content>
-        </ion-card>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          </div>
+        </div>
+        <div class="grid grid-cols-1 hidden sm:grid sm:grid-cols-2 gap-4">
             <div class="bg-white rounded-xl shadow-0 p-4">
               <div class="flex space-x-3">
                 <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -299,7 +293,7 @@
               </div>
             </div>
         </div>
-        <h3 class="font-semibold 4xl:CairoBlack font-bold text-lg 4xl:text-2xl mt-10 mb-6 mx-1">
+        <h3 class="font-semibold 4xl:CairoBlack font-bold text-lg 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
           Buy a New Service from Zain
         </h3>
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
@@ -418,9 +412,10 @@
             </template>
           </CardComponent>
           <CardComponent
+            class=""
             title="Connectivity Solutions"
             subtitle="5G & Fiber"
-            style="background: #1c5f47"
+            style="background: #1c5f47;"
           >
             <template #icon>
               <svg
@@ -563,6 +558,7 @@
             </template>
           </CardComponent>
           <CardComponent
+            class=""
             title="IoT Solutions"
             subtitle="5G & Fiber"
             style="
@@ -682,8 +678,8 @@
           </CardComponent>
           <CardComponent
             title="Digital Solutions"
-            subtitle="Drones & Cloud services"
-            style="background: #267d7b"
+            subtitle="Drones & Cloud"
+            style="background: #267d7b;"
           >
             <template #icon>
               <svg
@@ -839,15 +835,14 @@
             </template>
           </CardComponent>
         </div>
-        <h3 class="font-semibold 4xl:CairoBlack font-bold text-lg 4xl:text-2xl mt-10 mb-6 mx-1">
+        <h3 class="font-semibold 4xl:CairoBlack font-bold text-lg 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
           Zain World
         </h3>
-        <div class="grid grid-cols-2 md:grid-cols-12 my-4 gap-4">
+        <div class="grid grid-cols-2 sm:grid-cols-4 my-4 gap-4">
           <CardComponent
             title="Transfer to Zain"
             subtitle="Select package & switch"
             style="color: #333"
-            class="sm:col-span-2"
           >
             <template #icon>
               <svg
@@ -911,7 +906,6 @@
             title="eSIM"
             subtitle="Transfer to Zain eSIM"
             style="color: #333"
-            class="sm:col-span-2"
           >
             <template #icon>
               <svg
@@ -938,7 +932,7 @@
             </template>
           </CardComponent>
           <CardComponent
-            class="sm:col-span-8"
+            class="sm:col-span-2"
             title="Maps & Coverage"
             subtitle="Check our coverage"
             style="color: #333"
@@ -1004,8 +998,6 @@
 import {
   IonPage,
   IonContent,
-  IonCard,
-  IonCardContent,
   IonButton,
   IonIcon,
 } from "@ionic/vue";
@@ -1024,7 +1016,7 @@ const splideOptions = {
 const currentIndex = ref(0);
 const pages = ref(0);
 
-let numberInputLabel = 'Account Number';
+let numberInputLabel = 'Contract Number';
 let inputPlaceholder = '1XXXXXXXXX';
 
 function changeCurrentTab(tab){
@@ -1033,7 +1025,7 @@ function changeCurrentTab(tab){
     numberInputLabel = 'Line Number';
     inputPlaceholder = '05XXXXXXXX';
   }else{
-    numberInputLabel = 'Account Number';
+    numberInputLabel = 'Contract Number';
     inputPlaceholder = '1XXXXXXXXX';
   }
 }
@@ -1053,12 +1045,6 @@ function updatePagination(splide, newIndex) {
 function changeSlide(index){
   splideEl.go(index);
 }
-const onSwiper = (swiper) => {
-  console.log(swiper);
-};
-const onSlideChange = () => {
-  console.log("slide change");
-};
 
 const currentTab = ref("Bill Payment");
 </script>

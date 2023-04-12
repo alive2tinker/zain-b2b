@@ -6,13 +6,21 @@
 
 @font-face {
     font-family: Cairo;
-    src: url("../assets/fonts/Cairo.ttf") format("truetype-variations");
+    src: url("../assets/fonts/Cairo.woff2") format("woff2");
     font-weight: 1 999;
 }
 
 @layer {
     .shadow-0 {
         box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.05);
+    }
+
+    .btn-shadow{
+        box-shadow: 0px 0px 10px 0px #0000000D;
+    }
+
+    .inactive-border{
+        border: 1px solid #EFEFEF !important;
     }
 
     .cairo{
@@ -57,6 +65,8 @@ input.number-input:focus::placeholder {
     position: absolute;
     font-size: 16px;
     transition: margin ease-in-out 0.1s;
+    color: #A5A5a5;
+    font-weight:500;
 
 }
 
@@ -68,6 +78,7 @@ input.number-input:focus~.number-label {
     margin-top: -0.9rem;
     background-color: white;
     color: var(--ion-color-primary);
+    font-weight: 500;
 }
 
 .number-input-container {
@@ -85,6 +96,5 @@ input.number-input:focus~.number-label {
 
 .top-nav-btn{
     --color: var(--ion-color-medium) !important;
-
     --color-selected: var(--ion-color-medium) !important;
 }

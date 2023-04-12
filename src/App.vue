@@ -14,6 +14,7 @@ onMounted(() => {
     const setStatusBarStyleDark = async () => {
     await StatusBar.setStyle({ style: Style.Light });
   };
+    setStatusBarStyleDark();
   }catch(e){
     //
   }

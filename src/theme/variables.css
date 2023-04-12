@@ -3,6 +3,7 @@ http://ionicframework.com/docs/theming/ */
   
   /** Ionic CSS Variables **/
   :root {
+	--ion-default-font: Cairo, "sans-serif";
 	--ion-color-primary: #669933;
 	--ion-color-primary-rgb: 102,153,51;
 	--ion-color-primary-contrast: #ffffff;

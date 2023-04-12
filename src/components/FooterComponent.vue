@@ -1,7 +1,7 @@
 <template>
     <div
         style="background-color: var(--ion-color-primary)"
-        class="w-screen hidden sm:block bg-zain-primary px-7 py-4 left-0"
+        class="w-screen hidden sm:block mt-8 bg-zain-primary px-7 py-4 left-0"
       >
         <div class="flex justify-between text-white">
           <svg width="85" height="45" viewBox="0 0 85 45" fill="none" xmlns="http://www.w3.org/2000/svg">

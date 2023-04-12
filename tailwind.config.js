@@ -31,7 +31,8 @@ module.exports = {
           medium: '#333333',
           mediumgray: '#ccc',
           lightgray: '#aaaaaa14',
-          red:'#C50000'
+          red:'#C50000',
+          inactive: '#f4f4f4'
         },
       }
     },
