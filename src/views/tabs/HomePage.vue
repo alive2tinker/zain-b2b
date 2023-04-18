@@ -1,9 +1,52 @@
 <template>
   <ion-page>
-    <HeaderContainer></HeaderContainer>
+    <HeaderContainer>
+      <template #authentication>
+        <div
+          class="bg-white max-w-4xl mx-auto flex justify-between p-4"
+        >
+          <div>
+            <h4 class="font-semibold">Login or Register</h4>
+            <p class="text-sm pt-[2px]" style="color:#5f5f5f;">Get started and join Zain business now!</p>
+          </div>
+          <div class="flex my-auto">
+            <svg
+            class="mr-3"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.99658 12.0002H14.0012"
+                stroke="#669933"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M10.9995 8.99902L14.0008 12.0003L10.9995 15.0015"
+                stroke="#669933"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M5.99756 9.13634V7.39862C5.99813 6.44522 6.67133 5.62466 7.60623 5.4378L18.6108 3.0308C19.225 2.95985 19.8399 3.15712 20.2982 3.57211C20.7565 3.9871 21.0137 4.57952 21.0038 5.1977V19.0034C21.0041 19.5936 20.7438 20.1537 20.2927 20.5341C19.8415 20.9145 19.2454 21.0763 18.6638 20.9763L7.65925 19.0835C6.69882 18.9183 5.9971 18.0852 5.99756 17.1107V14.9728"
+                stroke="#669933"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </template>
+    </HeaderContainer>
     <ion-content :fullscreen="true" id="ion-content-home">
       <div class="bg-white md:rounded-xl p-2">
-        <div class="max-w-screen-2xl mx-auto lg:px-20 md:px-10">
+        <div class="max-w-screen-2xl mx-auto px-2 lg:px-20 md:px-10">
           <Splide
             class="pt-[20px] md:pt-[30px]"
             :options="splideOptions"
@@ -56,46 +99,6 @@
         </div>
       </div>
       <div class="max-w-6xl mx-auto px-7">
-        <div
-          class="bg-white rounded-xl hidden mt-[35px] sm:flex my-4 shadow-0 p-5 4xl:p-6 justify-between"
-        >
-          <div>
-            <h4 class="font-semibold text-lg 4xl:text-xl 4xl:font-bold">Login or Register</h4>
-            <p class="text-sm  4xl:text-[20px] pt-[2px]" style="color:#5f5f5f;">Get started and join Zain business now!</p>
-          </div>
-          <div class="flex my-auto">
-            <svg
-            class="mr-3"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M2.99658 12.0002H14.0012"
-                stroke="#669933"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M10.9995 8.99902L14.0008 12.0003L10.9995 15.0015"
-                stroke="#669933"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M5.99756 9.13634V7.39862C5.99813 6.44522 6.67133 5.62466 7.60623 5.4378L18.6108 3.0308C19.225 2.95985 19.8399 3.15712 20.2982 3.57211C20.7565 3.9871 21.0137 4.57952 21.0038 5.1977V19.0034C21.0041 19.5936 20.7438 20.1537 20.2927 20.5341C19.8415 20.9145 19.2454 21.0763 18.6638 20.9763L7.65925 19.0835C6.69882 18.9183 5.9971 18.0852 5.99756 17.1107V14.9728"
-                stroke="#669933"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-        </div>
         <h3 class="font-semibold 4xl:CairoBlack font-bold text-lg 4xl:text-2xl mt-9 mb-[15px] mx-1">
           QuickPay
         </h3>
@@ -184,6 +187,8 @@
                   <input
                     class="number-input w-full h-12  placeholder:pl-1 focus:mt-1"
                     type="tel"
+                    @change="updateLabel"
+                    onkeyup="this.setAttribute('value', this.value);" value="" 
                     id="pay-bill-number-input"
                     :placeholder="inputPlaceholder"
                   />
@@ -243,6 +248,7 @@
                     class="number-input w-full h-12  placeholder:pl-1 focus:mt-1"
                     type="tel"
                     id="pay-bill-number-input"
+                    @change="updateLabel"
                     :placeholder="inputPlaceholder"
                   />
                   <label
@@ -267,7 +273,7 @@
 </svg>
 
 <div>
-  <h4 class="font-bold">Pay your line bill</h4>
+  <h4 class="font-bold my-1">Pay your line bill</h4>
   <p class="text-sm font-light">Pay your line bills or overdue payments</p>
 </div>
               </div>
@@ -279,6 +285,7 @@
                   <input
                     class="number-input w-full h-12  placeholder:pl-1 focus:mt-1"
                     type="tel"
+                    @change="updateLabel"
                     id="pay-bill-number-input"
                     :placeholder="inputPlaceholder"
                   />
@@ -933,7 +940,6 @@
             </template>
           </CardComponent>
           <CardComponent
-            class="sm:col-span-2"
             title="Maps & Coverage"
             subtitle="Check our coverage"
             style="color: #333"
@@ -1045,6 +1051,14 @@ function updatePagination(splide, newIndex) {
 
 function changeSlide(index){
   splideEl.go(index);
+}
+
+function updateLabel(e){
+  if(e.target.value !== ""){
+    e.target.nextSibling.classList.add("number-label-active");
+  }else{
+    e.target.nextSibling.classList.remove("number-label-active");
+  }
 }
 
 const currentTab = ref("Bill Payment");

@@ -37,8 +37,11 @@ ion-content {
     --ion-background-color: #f9f9f9;
 }
 
-ion-content, ion-button, ion-toolbar, ion-tab-bar{
+ion-content, ion-button, ion-toolbar, ion-tab-bar, *{
     font-family: Cairo;
+    -webkit-user-select: none !important; /* Safari */
+    -ms-user-select: none !important; /* IE 10 and IE 11 */
+    user-select: none !important; /* Standard syntax */
 }
 
 .swiper-pagination-bullet-active {
@@ -78,6 +81,12 @@ input.number-input:focus~.number-label {
     margin-top: -0.9rem;
     background-color: white;
     color: var(--ion-color-primary);
+    font-weight: 500;
+}
+
+.number-label-active{
+    margin-top: -0.9rem;
+    background-color: white;
     font-weight: 500;
 }
 

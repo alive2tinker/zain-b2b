@@ -5,7 +5,7 @@
         <div class="border-t border-zinc-200">
           <div class="max-w-4xl mx-auto flex px-5 py-3">
             <div>
-            <p class="CairoBold">Hailah Alrashed</p>
+            <p class="font-bold">Hailah Alrashed</p>
             <p class="text-zain-primary CairoRegular text-sm">Edit Account Details</p>
           </div>
           <div class="flex ml-auto">
@@ -37,7 +37,7 @@
               stroke="#669933" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
           <div class="mt-0.5 space-y-1">
-            <p class="text-sm CairoBold">Zain Lines Management</p>
+            <p class="text-sm font-bold">Zain Lines Management</p>
             <p class="text-xs CairoRegular">My lines, managed lines, add a new line</p>
           </div>
           <div class="flex" style="margin-left:auto;">
@@ -58,7 +58,7 @@
           </svg>
 
           <div class="mt-0.5 space-y-1">
-            <p class="text-sm  CairoBold">Payment Management</p>
+            <p class="text-sm  font-bold">Payment Management</p>
             <p class="text-xs  CairoRegular">Wallet & cards, auto payments</p>
           </div>
           <div class="flex" style="margin-left:auto">
@@ -84,7 +84,7 @@
 
 
           <div class="mt-0.5 space-y-1">
-            <p class="text-sm  CairoBold">Notification Settings</p>
+            <p class="text-sm  font-bold">Notification Settings</p>
             <p class="text-xs  CairoRegular">Explore, line dashboard, help, more</p>
           </div>
           <div class="flex" style="margin-left:auto">
@@ -111,7 +111,7 @@
 
 
           <div class="mt-0.5 space-y-1">
-            <p class="text-sm  CairoBold">Security Management</p>
+            <p class="text-sm  font-bold">Security Management</p>
             <p class="text-xs  CairoRegular">Sessions, numbers & account security</p>
           </div>
           <div class="flex" style="margin-left:auto">
@@ -136,7 +136,7 @@
 
 
           <div class="mt-0.5 space-y-1">
-            <p class="text-sm  CairoBold">Account History</p>
+            <p class="text-sm  font-bold">Account History</p>
             <p class="text-xs  CairoRegular">All activities under your account</p>
           </div>
           <div class="flex" style="margin-left:auto">
@@ -175,7 +175,7 @@
 
 
           <div class="mt-0.5 space-y-1">
-            <p class="text-sm  CairoBold">Order Tracking</p>
+            <p class="text-sm  font-bold">Order Tracking</p>
             <p class="text-xs  CairoRegular">Check your orders status</p>
           </div>
           <div class="flex" style="margin-left:auto">
@@ -198,7 +198,7 @@
             <path d="M13 23H31" stroke="#669933" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
           <div class="mt-0.5 space-y-1">
-            <p class="text-sm  CairoBold">Language</p>
+            <p class="text-sm  font-bold">Language</p>
             <p class="text-xs  CairoRegular">English</p>
           </div>
           <div class="flex" style="margin-left:auto">

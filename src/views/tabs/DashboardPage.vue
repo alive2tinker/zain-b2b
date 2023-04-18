@@ -35,7 +35,7 @@
         <div class="bg-white shadow-0 rounded-xl p-3" v-show="crnOpen">
           <ion-icon :icon="close" @click="crnOpen = false" class="float-right rtl:float-left"></ion-icon>
           <div class="flex space-x-2">
-            <svg class="w-14 h-10" width="28" height="28" viewBox="0 0 28 28" fill="none"
+            <svg class="w-12 h-12" width="28" height="28" viewBox="0 0 28 28" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <circle cx="14" cy="14" r="14" fill="#FFEFD6" />
               <path
@@ -44,32 +44,37 @@
             </svg>
             <div>
               <p class="text-lg CairoMedium">Commercial Register Renewal</p>
-              <h6 class="CairoLight text-sm text-zain-medium">You must renew your commercial register before 21 March
+              <h6 class="CairoLight text-sm mt-3 text-zain-medium">You must renew your commercial register before 21 March
                 2021 to avoid service interruption.</h6>
             </div>
           </div>
         </div>
         <div class="flex my-4 pr-4 justify-between">
-          <h3 class="text-lg CairoSemiBold my-2 mx-1">Total Bill</h3>
-          <p class="text-sm mt-3.5 text-zain-primary CairoRegular">Bills History<span><ion-icon class="absolute pt-1"
+          <div class="flex justify-center place-items-center pt-2.5">
+            <h3 class="font-semibold 4xl:CairoBlack font-bold text-lg 4xl:text-2xl mb-[15px] mx-1">
+          Total Bill
+        </h3>
+          </div>
+          <div class="flex justify-center place-items-center">
+            <p class="text-zain-primary">Bills History<span><ion-icon class="absolute pt-1"
                 :icon="chevronForward"></ion-icon></span></p>
+          </div>
         </div>
         <div class="bg-white rounded-xl shadow-0 p-2">
           <div class="px-3 space-y-2">
             <div class="flex justify-between space-x-4 sm:justify-start">
-            <h4 class="text-lg CairoBold mt-1 ml-1.5">Total Payment Required</h4>
+            <h4 class="text-lg font-bold mt-1 ml-1.5">Total Payment Required</h4>
             <ion-chip class="rounded-md" style="background: #FAe8e8; height:23px;">
               <h6 class="CairoRegular" style="color: #C50000">Unpaid</h6>
             </ion-chip>
           </div>
-          <h5 class="text-3xl text-zain-primary CairoRegular ml-1.5">1401.58<span
-              class="text-zain-medium text-base mx-1 CairoBold">SAR</span></h5>
+          <h5 class="text-3xl text-zain-primary CairoRegular ml-1.5">1401.58 SAR</h5>
               <p class="text-zinc-400 text-sm ml-1.5 CairoRegular my-2">15% VAT Inclusive</p>
               <hr>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-12 gap-4 mt-3">
-            <p class="CairoRegular py-2 ml-1.5 mt-2 sm:col-span-7 px-3">Pay your bill before <span class="CairoBold">05 April 2021</span></p>
-          <ion-button expand="block" class="btn-primary sm:col-span-5 CairoSemiBold mb-4">Pay Now</ion-button>
+            <p class="CairoRegular py-2 ml-1.5 mt-2 sm:col-span-7 px-3">Pay your bill before <span class="font-bold">05 April 2021</span></p>
+          <ion-button expand="block" class="btn-primary sm:col-span-5 CairoSemiBold mb-4" style="--box-shadow: none;">Pay Now</ion-button>
           </div>
         </div>
         <div class="bg-white rounded-xl shadow-0 my-4 p-6">
@@ -89,15 +94,17 @@
               </svg>
             </div>
             <div class="py-1">
-              <h5 class="CairoBold">Unbilled Amount</h5>
+              <h5 class="font-bold">Unbilled Amount</h5>
               <p class="text-sm text-zain-medium CairoLight">Accumulated to be added in the next bill</p>
-              <p class="CairoRegular mt-1 -mb-3">365.90 SAR</p>
+              <p class="font-bold mt-1 -mb-3">365.90 SAR</p>
             </div>
           </div>
         </div>
-        <h3 class="text-lg CairoSemiBold my-5 mx-1">Account Management</h3>
-        <div class="grid grid-cols-2 gap-4 my-2">
-          <CardComponent class="col-span-2" title="My Services" subtitle="More than just a cloud"
+        <h3 class="font-semibold 4xl:CairoBlack font-bold text-lg 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
+          Account Management
+        </h3>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 my-2">
+          <CardComponent title="My Services" subtitle="More than just a cloud"
             style="background: linear-gradient(132.46deg, #353982 0%, rgba(41, 44, 101, 0.77) 103.31%);">
             <template #icon>
               <svg width="46" height="45" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg">

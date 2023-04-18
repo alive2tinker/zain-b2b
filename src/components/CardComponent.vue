@@ -3,8 +3,10 @@
         <div class="mt-2">
             <slot name="icon"></slot>
         </div>
-        <h5 class="absolute bottom-10 text-sm sm:text-lg font-bold">{{ title }}</h5>
-        <h6 class="absolute bottom-6 text-sm break-all">{{ subtitle }}</h6>
+        <div class="flex flex-col h-[80px] md:h-[100px] justify-end">
+            <h5 class="text-sm sm:text-lg font-bold">{{ title }}</h5>
+            <h6 class="text-sm">{{ subtitle }}</h6>
+        </div>
         <div class="absolute bottom-0 right-0 rtl:left-0">
             <slot name="pattern"></slot>
         </div>
