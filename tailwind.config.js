@@ -32,7 +32,8 @@ module.exports = {
           mediumgray: '#ccc',
           lightgray: '#aaaaaa14',
           red:'#C50000',
-          inactive: '#f4f4f4'
+          inactive: '#f4f4f4',
+          warning: '#F49F01'
         },
       }
     },

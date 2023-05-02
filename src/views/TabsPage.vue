@@ -1,8 +1,8 @@
 <template>
-  <ion-page>
+  <ion-page id="main-content">
     <ion-tabs @ionTabsDidChange="handleTabChange">
       <ion-router-outlet></ion-router-outlet>
-      <ion-tab-bar slot="bottom" class="md:hidden">
+      <ion-tab-bar slot="bottom" class="sm:hidden">
         <ion-tab-button @click="getToTop('home')" tab="home" href="/tabs/home">
           <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="36" height="36" rx="10" :fill="currentTab === 'home' ? 'currentColor' : 'white'" />

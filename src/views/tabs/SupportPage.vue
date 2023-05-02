@@ -317,7 +317,7 @@
 </ion-page></template>
 
 <script setup lang="ts">
-import { IonPage, IonContent } from '@ionic/vue';
+import { IonPage, IonContent, IonIcon } from '@ionic/vue';
 import HeaderContainer from '@/components/HeaderContainer.vue';
 import CardComponent from '@/components/CardComponent.vue';
 import FooterComponent from "@/components/FooterComponent.vue";

@@ -1,47 +1,8 @@
 <template>
-  <ion-page>
+  <ion-page id="main-content">
     <HeaderContainer>
-      <template #authentication>
-        <div
-          class="bg-white max-w-4xl mx-auto flex justify-between p-4"
-        >
-          <div>
-            <h4 class="font-semibold">Login or Register</h4>
-            <p class="text-sm pt-[2px]" style="color:#5f5f5f;">Get started and join Zain business now!</p>
-          </div>
-          <div class="flex my-auto">
-            <svg
-            class="mr-3"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M2.99658 12.0002H14.0012"
-                stroke="#669933"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M10.9995 8.99902L14.0008 12.0003L10.9995 15.0015"
-                stroke="#669933"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M5.99756 9.13634V7.39862C5.99813 6.44522 6.67133 5.62466 7.60623 5.4378L18.6108 3.0308C19.225 2.95985 19.8399 3.15712 20.2982 3.57211C20.7565 3.9871 21.0137 4.57952 21.0038 5.1977V19.0034C21.0041 19.5936 20.7438 20.1537 20.2927 20.5341C19.8415 20.9145 19.2454 21.0763 18.6638 20.9763L7.65925 19.0835C6.69882 18.9183 5.9971 18.0852 5.99756 17.1107V14.9728"
-                stroke="#669933"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-        </div>
+      <template #line-selector>
+        <line-selector></line-selector>
       </template>
     </HeaderContainer>
     <ion-content :fullscreen="true" id="ion-content-home">
@@ -49,9 +10,11 @@
         <div class="max-w-screen-2xl mx-auto px-2 lg:px-20 md:px-10">
           <Splide
             class="pt-[20px] md:pt-[30px]"
+            :autoplay="true"
+            :rewind="true"
             :options="splideOptions"
             @splide:pagination:mounted="hideDefaultPagination"
-            @splide:move="updatePagination"
+            @splide:moved="updatePagination"
             aria-label="My Favorite Images"
           >
             <SplideSlide>
@@ -148,10 +111,10 @@
                 </svg>
               </div>
               <div>
-                <h5 class="font-bold text-black">
+                <h5 class="text-sm font-bold text-black">
                   Pay Bill or Recharge Line
                 </h5>
-                <p class=" text-black">Select Line Type</p>
+                <p class="text-xs text-black">Select Line Type</p>
               </div>
             </div>
             <div class="grid grid-cols-2 gap-2 my-2">
@@ -846,11 +809,12 @@
         <h3 class="font-semibold 4xl:CairoBlack font-bold text-lg 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
           Zain World
         </h3>
-        <div class="grid grid-cols-2 sm:grid-cols-4 my-4 gap-4">
+        <div class="grid grid-cols-2 sm:grid-cols-4 sm:auto-rows-auto my-4 gap-4">
           <CardComponent
             title="Transfer to Zain"
             subtitle="Select package & switch"
             style="color: #333"
+            class="col-auto"
           >
             <template #icon>
               <svg
@@ -914,6 +878,7 @@
             title="eSIM"
             subtitle="Transfer to Zain eSIM"
             style="color: #333"
+            class="col-auto"
           >
             <template #icon>
               <svg
@@ -993,6 +958,36 @@
               </svg>
             </template>
           </CardComponent>
+          <CardComponent
+            title="eSIM"
+            subtitle="Transfer to Zain eSIM"
+            style="color: #333"
+            class="col-auto"
+          >
+            <template #icon>
+              <svg
+                width="45"
+                height="45"
+                viewBox="0 0 45 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="45" height="45" rx="10" fill="#2F3275" />
+                <path
+                  d="M28.4 17.4L25.6 14.6C25.2 14.2 24.7 14 24.2 14H17C15.9 14 15 14.9 15 16V30C15 31.1 15.9 32 17 32H27C28.1 32 29 31.1 29 30V18.8C29 18.3 28.8 17.8 28.4 17.4Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <line x1="19.5" y1="32" x2="19.5" y2="26" stroke="white" />
+                <line x1="24.5" y1="32" x2="24.5" y2="21" stroke="white" />
+                <circle cx="19.5" cy="25.5" r="1" stroke="white" />
+                <circle cx="24.5" cy="20.5" r="1" stroke="white" />
+              </svg>
+            </template>
+          </CardComponent>
         </div>
       </div>
       <FooterComponent class="mt-2 absolute">
@@ -1011,14 +1006,18 @@ import {
 import HeaderContainer from "@/components/HeaderContainer.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
 import CardComponent from "@/components/CardComponent.vue";
+import LineSelector from "@/components/LineSelector.vue";
 import { chevronForward } from "ionicons/icons";
 import { ref } from "vue";
 
 const splideOptions = {
+  type: 'loop',
+  autoplay:true,
+  speed: 1000,
   arrows: false,
   gap: "4em",
   pagination: true,
-  perPage: 1,
+  perPage: 1
 };
 const currentIndex = ref(0);
 const pages = ref(0);

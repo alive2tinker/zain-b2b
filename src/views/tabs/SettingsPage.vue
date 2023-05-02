@@ -1,24 +1,24 @@
 <template>
   <ion-page>
     <HeaderContainer>
-      <template #authentication>
-        <div class="border-t border-zinc-200">
-          <div class="max-w-4xl mx-auto flex px-5 py-3">
-            <div>
-            <p class="font-bold">Hailah Alrashed</p>
-            <p class="text-zain-primary CairoRegular text-sm">Edit Account Details</p>
-          </div>
-          <div class="flex ml-auto">
-            <div class="m-auto">
-              <ion-icon :icon="chevronForward"></ion-icon>
-            </div>
-          </div>
-          </div>
-        </div>
+      <template #line-selector>
+        <admin-account class="sm:hidden"></admin-account>
       </template>
     </HeaderContainer>
     <ion-content :fullscreen="true" id="ion-content-settings">
       <div class="max-w-4xl mt-7 mx-auto px-4 space-y-4 4xl:min-h-[80vh]">
+        <!-- Account Details-->
+        <div class="rounded-xl flex space-x-4 rounded-md bg-white shadow-0 p-4 mx-2 py-4" v-show="isLoggedIn && !isPlatform('mobile')">
+          <div class="mt-0.5 space-y-1">
+            <p class="text-sm font-bold">Hailah Alrashed</p>
+            <p class="text-xs CairoRegular text-zain-primary">Edit Account Details</p>
+          </div>
+          <div class="flex" style="margin-left:auto;">
+            <div class="m-auto">
+              <ion-icon :icon="chevronForward" class="text-zinc-300"></ion-icon>
+            </div>
+          </div>
+        </div>
         <!-- Zain Line Management-->
         <div class="rounded-xl flex space-x-4 rounded-md bg-white shadow-0 p-4 mx-2 py-4">
           <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -239,8 +239,13 @@
 </template>
 
 <script setup lang="ts">
-import { IonPage, IonContent, IonIcon } from '@ionic/vue';
+import { IonPage, IonContent, IonIcon, isPlatform } from '@ionic/vue';
 import { chevronForward } from 'ionicons/icons';
 import HeaderContainer from '@/components/HeaderContainer.vue';
 import FooterComponent from "@/components/FooterComponent.vue";
+import { computed } from 'vue';
+import store from '@/store';
+import AdminAccount from '@/components/AdminAccount.vue';
+
+const isLoggedIn = computed(() => store.getters['isLoggedIn'])
 </script>
