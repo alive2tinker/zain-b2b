@@ -1,6 +1,6 @@
 <template>
     <ion-header :class="{'ion-no-border bg-white':true, 'hidden': !isLoggedIn, '-mt-8': isPlatform('ios') && !isPlatform('mobileweb')}">
-    <ion-toolbar class="border-b-2 pb-2.5 border-gray-200">
+    <ion-toolbar class="border-b pb-2.5 border-gray-200">
       <div class="max-w-7xl mx-auto flex">
         <div class="flex w-full mx-4 space-x-4">
           <div>

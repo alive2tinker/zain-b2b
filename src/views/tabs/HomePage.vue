@@ -61,7 +61,7 @@
           </div>
         </div>
       </div>
-      <div class="max-w-6xl mx-auto px-7">
+      <div class="max-w-6xl mx-auto px-2">
         <h3 class="font-semibold 4xl:CairoBlack font-bold text-lg 4xl:text-2xl mt-9 mb-[15px] mx-1">
           QuickPay
         </h3>
@@ -119,10 +119,9 @@
             </div>
             <div class="grid grid-cols-2 gap-2 my-2">
               <button
-                fill="clear"
                 :class="{
-                  'w-full normal-case sm:h-10 h-[45px] payment-tabs rounded-xl bg-white border hover:border-zain-primary hover:bg-white': true,
-                  'border border-zain-primary text-zain-primary font-bold':
+                  'w-full normal-case sm:h-10 h-[45px] payment-tabs rounded-xl bg-white text-sm border hover:border-zain-primary hover:bg-white': true,
+                  'border border-zain-primary text-zain-primary font-semibold':
                     currentTab === 'Bill Payment',
                   'btn-shadow text-zain-medium inactive-border': currentTab != 'Bill Payment',
                 }"
@@ -132,13 +131,13 @@
               <button
                 fill="clear"
                 :class="{
-                  'w-full normal-case sm:h-10 h-[45px]  payment-tabs rounded-xl bg-white border hover:border-zain-primary hover:bg-white': true,
-                  'border border-zain-primary text-zain-primary font-bold':
+                  'w-full normal-case sm:h-10 h-[45px]  payment-tabs rounded-xl bg-white border text-sm hover:border-zain-primary hover:bg-white': true,
+                  'border border-zain-primary text-zain-primary font-semibold':
                     currentTab === 'Recharge',
                   'btn-shadow text-zain-medium inactive-border': currentTab != 'Recharge',
                 }"
                 @click="changeCurrentTab('Recharge')"
-                ><h5>Line Payment</h5></button
+                ><h5>Line payment</h5></button
               >
             </div>
             <div class="grid grid-cols-12 gap-4 mt-4">
@@ -158,7 +157,6 @@
                   <label
                     for="pay-bill-number-input"
                     class="number-label left-3 px-1 text-gray-500"
-                    style="font-family:  Cairo!important"
                     >{{ numberInputLabel }}</label
                   >
                 </div>
@@ -907,6 +905,7 @@
           <CardComponent
             title="Maps & Coverage"
             subtitle="Check our coverage"
+            class="col-span-2"
             style="color: #333"
           >
             <template #icon>
@@ -958,36 +957,6 @@
               </svg>
             </template>
           </CardComponent>
-          <CardComponent
-            title="eSIM"
-            subtitle="Transfer to Zain eSIM"
-            style="color: #333"
-            class="col-auto"
-          >
-            <template #icon>
-              <svg
-                width="45"
-                height="45"
-                viewBox="0 0 45 45"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="45" height="45" rx="10" fill="#2F3275" />
-                <path
-                  d="M28.4 17.4L25.6 14.6C25.2 14.2 24.7 14 24.2 14H17C15.9 14 15 14.9 15 16V30C15 31.1 15.9 32 17 32H27C28.1 32 29 31.1 29 30V18.8C29 18.3 28.8 17.8 28.4 17.4Z"
-                  stroke="white"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <line x1="19.5" y1="32" x2="19.5" y2="26" stroke="white" />
-                <line x1="24.5" y1="32" x2="24.5" y2="21" stroke="white" />
-                <circle cx="19.5" cy="25.5" r="1" stroke="white" />
-                <circle cx="24.5" cy="20.5" r="1" stroke="white" />
-              </svg>
-            </template>
-          </CardComponent>
         </div>
       </div>
       <FooterComponent class="mt-2 absolute">
@@ -1022,13 +991,13 @@ const splideOptions = {
 const currentIndex = ref(0);
 const pages = ref(0);
 
-let numberInputLabel = 'Contract Number';
+let numberInputLabel = 'Contract number';
 let inputPlaceholder = '1XXXXXXXXX';
 
 function changeCurrentTab(tab){
   currentTab.value = tab;
   if(currentTab.value == 'Recharge'){
-    numberInputLabel = 'Line Number';
+    numberInputLabel = 'Line number';
     inputPlaceholder = '05XXXXXXXX';
   }else{
     numberInputLabel = 'Contract Number';

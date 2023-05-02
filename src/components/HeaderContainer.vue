@@ -1,7 +1,7 @@
 <template>
   <div>
     <ion-header class="ion-no-border bg-white z-50">
-    <ion-toolbar class="border-b pb-2.5 pt-2.5 border-gray-200">
+    <ion-toolbar class="border-b pb-2.5 pt-2.5">
       <div class="max-w-7xl mx-auto flex">
         <ion-title>
           <a href="/tabs/home">
@@ -28,15 +28,9 @@
               :src="SettingsIcon"></ion-icon><ion-label class="font-semibold">Settings</ion-label></ion-tab-button>
         </ion-tab-bar>
         <ion-buttons class="mx-4" slot="end">
-          <language-dropdown v-show="isPlatform('mobileweb')"></language-dropdown>
-          <ion-button class="border-l border-[#0000000f] px-1 sm:hidden" v-show="isPlatform('mobileweb')" @click="login"><ion-icon
+          <language-dropdown v-show="!isPlatform('ios') && !isPlatform('android')"></language-dropdown>
+          <ion-button class="border-l border-[#0000000f] px-1" v-show="!isPlatform('ios') && !isPlatform('android')" @click="login"><ion-icon
                 :icon="PersonIcon"></ion-icon></ion-button>
-          <div v-show="!isLoggedIn && isPlatform('desktop')">
-            <div class="hidden sm:block border-l border-[#0000000f] px-3">
-              <ion-button @click="login" class=" normal-case font-bold bg-zain-primary text-white rounded-xl tracking-wider text-base"
-                style="--box-shadow:none; height:48px; --border-radius:12px;">Get Started</ion-button>
-            </div>
-          </div>
         </ion-buttons>
       </div>
     </ion-toolbar>
