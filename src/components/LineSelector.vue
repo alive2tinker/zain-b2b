@@ -5,8 +5,8 @@
         <div class="flex w-full mx-4 space-x-2.5">
           <img class="w-[45px] border-[1.5px] border-gray-200 aspect-square rounded-xl" src="https://pbs.twimg.com/profile_images/1630134657244168194/wEgyvsSS_400x400.jpg" alt="">
           <div>
-            <h1><b>Hala</b>, Khaled Abdullah</h1>
-            <p>1012893784, <span>[Riyadh]</span></p>
+            <h1><b>Riyadh Office</b></h1>
+            <p>1012893784<span class="mx-[6px]" style="color:#5f5f5f">[Voice - Postpaid]</span></p>
           </div>
         </div>
         <ion-buttons class="mx-4" slot="end">

@@ -26,7 +26,7 @@ module.exports = {
     extend: {
       colors: {
         zain: {
-          primary: '#669933',
+          primary: '#70A838',
           light: '#e4e4e4',
           medium: '#333333',
           mediumgray: '#ccc',
