@@ -8,8 +8,8 @@
     <ion-content :fullscreen="true" id="ion-content-support">
       <div class="max-w-6xl mx-auto py-6 px-2">
         <h1 class="text-lg font-semibold">Help & support</h1>
-        <div class="grid grid cols-2 my-4 sm:grid-cols-4 gap-4">
-          <CardComponent class="text-[#333333]" title="Knowledge base" subtitle="FAQs/ How to">
+        <div class="grid grid-cols-2 my-4 sm:grid-cols-4 gap-4">
+          <CardComponent class="text-zain-medium" title="Knowledge base" subtitle="FAQs/ How to">
             <template #icon>
               <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="45" height="45" rx="10" fill="#2B8C8B" />
@@ -31,7 +31,7 @@
 
             </template>
           </CardComponent>
-          <CardComponent title="Open Support Ticket" subtitle="Open tickets & track them" class="text-[#333]">
+          <CardComponent title="Open Support Ticket" subtitle="Open tickets & track them" class="text-zain-medium">
             <template #icon>
               <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="45" height="45" rx="10" fill="#3A3F92" />
@@ -56,7 +56,7 @@
             </template>
           </CardComponent>
           <CardComponent title="Contact Account Manager" subtitle="Easily reach your dedicated account manager"
-            class="text-[#333] col-span-2">
+            class="text-zain-medium col-span-2">
             <template #icon>
               <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="45" height="45" rx="10" fill="#E99601" />
@@ -79,8 +79,8 @@
           </CardComponent>
         </div>
         <h1 class="text-lg font-semibold">Feedback</h1>
-        <div class="grid grid cols-2 my-4 sm:grid-cols-4 gap-4">
-          <CardComponent class="text-[#333333]" title="Contact us" subtitle="Ways to reach us">
+        <div class="grid grid-cols-2 my-4 sm:grid-cols-4 gap-4">
+          <CardComponent class="text-zain-medium" title="Contact us" subtitle="Ways to reach us">
             <template #icon>
               <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="45" height="45" rx="10" fill="#1C6D9B" />
@@ -100,7 +100,7 @@
 
             </template>
           </CardComponent>
-          <CardComponent title="Give us Feedback" subtitle="Tell us your experience" class="text-[#333]">
+          <CardComponent title="Give us Feedback" subtitle="Tell us your experience" class="text-zain-medium">
             <template #icon>
               <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="45" height="45" rx="10" fill="#8A568A" />
