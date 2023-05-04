@@ -342,7 +342,7 @@
 <script setup lang="ts">
 import { IonPage, IonContent, IonChip, IonButton, IonIcon } from '@ionic/vue';
 import HeaderContainer from '@/components/HeaderContainer.vue';
-import { chevronDown, chevronForward, close } from 'ionicons/icons';
+import { chevronForward, close } from 'ionicons/icons';
 import { ref } from 'vue';
 import CardComponent from '@/components/CardComponent.vue';
 import FooterComponent from "@/components/FooterComponent.vue";

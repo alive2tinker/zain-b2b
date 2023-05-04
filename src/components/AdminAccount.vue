@@ -1,5 +1,6 @@
 <template>
-    <ion-header :class="{'ion-no-border bg-white':true, 'hidden': !isLoggedIn, '-mt-8': isPlatform('ios') && !isPlatform('mobileweb')}">
+  <ion-header
+    :class="{ 'ion-no-border bg-white': true, 'hidden': !isLoggedIn, '-mt-8': isPlatform('ios') && !isPlatform('mobileweb') }">
     <ion-toolbar class="border-b pb-2.5 border-gray-200">
       <div class="max-w-7xl mx-auto flex">
         <div class="flex w-full mx-4 space-x-4">
@@ -18,11 +19,16 @@
   </ion-header>
 </template>
 <script setup lang="ts">
-import { IonToolbar, IonHeader, IonButtons, isPlatform} from '@ionic/vue';
+import { IonToolbar, IonHeader, IonButtons, isPlatform } from '@ionic/vue';
 import { chevronDown } from 'ionicons/icons';
 import { useStore } from 'vuex';
 import { computed } from 'vue';
 
+
 const store = useStore();
 const isLoggedIn = computed(() => store.getters['isLoggedIn']);
+
+function login(){
+  store.dispatch('toggleLogin');
+}
 </script>

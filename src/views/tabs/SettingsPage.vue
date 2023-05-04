@@ -2,13 +2,13 @@
   <ion-page>
     <HeaderContainer>
       <template #line-selector>
-        <admin-account class="sm:hidden"></admin-account>
+        <admin-account></admin-account>
       </template>
     </HeaderContainer>
     <ion-content :fullscreen="true" id="ion-content-settings">
       <div class="max-w-4xl mt-7 mx-auto px-4 space-y-4 4xl:min-h-[80vh]">
         <!-- Account Details-->
-        <div class="rounded-xl flex space-x-4 rounded-md bg-white shadow-0 p-4 mx-2 py-4" v-show="isLoggedIn && isPlatform('desktop')">
+        <div class="rounded-xl flex space-x-4 rounded-md bg-white shadow-0 p-4 mx-2 py-4" v-show="isLoggedIn && isPlatform('desktop') ">
           <div class="mt-0.5 space-y-1">
             <p class="text-base font-bold">Hailah Alrashed</p>
             <p class="text-xs CairoRegular text-zain-primary">Edit Account Details</p>

@@ -196,17 +196,17 @@
 <path d="M27 14H30.286C31.232 14 32 14.768 32 15.714V18" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 <div>
-  <h4 class="font-bold">Pay your company bill</h4>
+  <h4 class="font-bold my-1">Pay your company bill</h4>
   <p class="text-sm font-light">Pay all your company bills with a single click</p>
 </div>
               </div>
               <div class="pt-4">
                 <div
-                  class="rounded-lg border relative border-gray-300 px-2 number-input-container"
-                  style="width: 100%; height: 50px"
+                  class="rounded-lg border relative border-gray-300 px-2 mx-0.5 number-input-container"
+                  style="height: 50px"
                 >
                   <input
-                    class="number-input w-full h-12  placeholder:pl-1 focus:mt-1"
+                    class="number-input w-full h-12 placeholder:pl-1 focus:mt-1"
                     type="tel"
                     id="pay-bill-number-input"
                     @change="updateLabel"
@@ -240,8 +240,8 @@
               </div>
               <div class="pt-4">
                 <div
-                  class="rounded-lg border relative border-gray-300 px-2 number-input-container"
-                  style="width: 100%; height: 50px"
+                  class="rounded-lg border relative border-gray-300 px-2 mx-0.5 number-input-container"
+                  style="height: 50px"
                 >
                   <input
                     class="number-input w-full h-12  placeholder:pl-1 focus:mt-1"
