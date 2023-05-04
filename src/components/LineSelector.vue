@@ -1,7 +1,7 @@
 <template>
     <ion-header :class="{'ion-no-border bg-white':true, '-mt-10': isPlatform('ios') && !isPlatform('mobileweb')}">
     <ion-toolbar :class="{'border-b-[1px] ion-no-padding border-gray-200': true, '-pt-5': isPlatform('ios')}" v-if="isLoggedIn">
-      <div class="max-w-7xl mx-auto flex">
+      <div class="max-w-7xl mx-auto flex py-[10px]">
         <div class="flex w-full mx-4 space-x-2.5">
           <img class="w-[45px] border-[1.5px] border-gray-200 aspect-square rounded-xl" src="https://pbs.twimg.com/profile_images/1630134657244168194/wEgyvsSS_400x400.jpg" alt="">
           <div>
