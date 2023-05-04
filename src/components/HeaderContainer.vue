@@ -65,6 +65,7 @@ ion-tab-bar {
 
 ion-tab-button.tab-selected {
   border-bottom: 2px solid var(--ion-color-primary);
+  color: var(--ion-color-primary);
 }
 
 ion-tab-button {
