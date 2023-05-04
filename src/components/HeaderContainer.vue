@@ -2,7 +2,7 @@
   <div>
     <ion-header class="ion-no-border bg-white z-50">
     <ion-toolbar class="border-b pb-2.5 pt-2.5">
-      <div class="max-w-7xl mx-auto flex">
+      <div :class="{'max-w-7xl mx-auto flex':true, 'pt-3': isPlatform('desktop')}">
         <ion-title>
           <a href="/tabs/home">
             <svg width="70" height="38" viewBox="0 0 70 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -16,15 +16,15 @@
           </a>
         </ion-title>
         <ion-tab-bar class="hidden sm:flex" slot="top">
-          <ion-tab-button class="text-base" layout="icon-start" tab="home" href="/tabs/home">
+          <ion-tab-button class="text-base text-zain-medium" layout="icon-start" tab="home" href="/tabs/home">
             <ion-icon :icon="HomeIcon" aria-hidden="true"></ion-icon>
             <ion-label class="font-semibold">Explore</ion-label>
           </ion-tab-button>
-          <ion-tab-button class="text-base" layout="icon-start" tab="dashboard" href="/tabs/dashboard"><ion-icon
+          <ion-tab-button class="text-base text-zain-medium" layout="icon-start" tab="dashboard" href="/tabs/dashboard"><ion-icon
               :src="DashboardIcon"></ion-icon><ion-label class="font-semibold">About</ion-label></ion-tab-button>
-          <ion-tab-button class="text-base" layout="icon-start" tab="support" href="/tabs/support"><ion-icon
+          <ion-tab-button class="text-base text-zain-medium" layout="icon-start" tab="support" href="/tabs/support"><ion-icon
               :src="SupportIcon"></ion-icon><ion-label class="font-semibold">Help</ion-label></ion-tab-button>
-          <ion-tab-button class="text-base" layout="icon-start" tab="settings" href="/tabs/settings"><ion-icon
+          <ion-tab-button class="text-base text-zain-medium" layout="icon-start" tab="settings" href="/tabs/settings"><ion-icon
               :src="SettingsIcon"></ion-icon><ion-label class="font-semibold">Settings</ion-label></ion-tab-button>
         </ion-tab-bar>
         <ion-buttons class="mx-4" slot="end">

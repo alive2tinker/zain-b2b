@@ -5,7 +5,7 @@
         </div>
         <div class="flex flex-col h-[75px] md:h-[110px] justify-end" style="white-space: nowrap;">
             <h5 :class="{'text-sm sm:text-lg font-bold': true}">{{ title }}</h5>
-            <h6 class="text-xs">{{ subtitle }}</h6>
+            <h6 class="text-sm">{{ subtitle }}</h6>
         </div>
         <div class="absolute bottom-0 right-0 rtl:left-0">
             <slot name="pattern"></slot>

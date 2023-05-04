@@ -197,7 +197,7 @@
 </svg>
 <div>
   <h4 class="font-bold my-1">Pay your company bill</h4>
-  <p class="text-sm font-light">Pay all your company bills with a single click</p>
+  <p class="text-sm font-light">One click to pay all of your company's bills.</p>
 </div>
               </div>
               <div class="pt-4">
@@ -235,7 +235,7 @@
 
 <div>
   <h4 class="font-bold my-1">Pay your line bill</h4>
-  <p class="text-sm font-light">Pay your line bills or overdue payments</p>
+  <p class="text-sm font-light">Make your line payments hassle-free.</p>
 </div>
               </div>
               <div class="pt-4">
@@ -267,7 +267,7 @@
         </h3>
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
           <CardComponent
-            subtitle="Postpaid & Prepaid"
+            subtitle="Zain has plans for all."
             title="Zain Mobile Plans"
             style="
               background: linear-gradient(
@@ -383,7 +383,7 @@
           <CardComponent
             class=""
             title="Connectivity Solutions"
-            subtitle="5G & Fiber"
+            subtitle="Elevate your experience"
             style="background: #1c5f47;"
           >
             <template #icon>
@@ -528,8 +528,8 @@
           </CardComponent>
           <CardComponent
             class=""
-            title="IoT Solutions"
-            subtitle="5G & Fiber"
+            title="Digital Solutions"
+            subtitle="IoT & Cloud services"
             style="
               background: linear-gradient(
                 132.77deg,
@@ -646,8 +646,8 @@
             </template>
           </CardComponent>
           <CardComponent
-            title="Digital Solutions"
-            subtitle="Drones & Cloud"
+            title="Drone Solutions"
+            subtitle="Opportunities from above"
             style="background: #267d7b;"
           >
             <template #icon>
