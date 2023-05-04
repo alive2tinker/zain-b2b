@@ -8,7 +8,7 @@
     <ion-content :fullscreen="true" id="ion-content-settings">
       <div class="max-w-4xl mt-7 mx-auto px-4 space-y-4 4xl:min-h-[80vh]">
         <!-- Account Details-->
-        <div class="rounded-xl flex space-x-4 rounded-md bg-white shadow-0 p-4 mx-2 py-4" v-show="isLoggedIn && isPlatform('desktop') ">
+        <!-- <div class="rounded-xl flex space-x-4 rounded-md bg-white shadow-0 p-4 mx-2 py-4" v-show="isLoggedIn && isPlatform('desktop') ">
           <div class="mt-0.5 space-y-1">
             <p class="text-base font-bold">Hailah Alrashed</p>
             <p class="text-xs CairoRegular text-zain-primary">Edit Account Details</p>
@@ -18,7 +18,7 @@
               <ion-icon :icon="chevronForward" class="text-zinc-300"></ion-icon>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- Zain Line Management-->
         <div class="rounded-xl flex space-x-4 rounded-md bg-white shadow-0 p-4 mx-2 py-4">
           <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
