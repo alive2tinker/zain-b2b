@@ -6,7 +6,7 @@
       </template>
     </HeaderContainer>
     <ion-content :fullscreen="true" id="ion-content-support">
-      <div class="max-w-6xl mx-auto py-8 px-2">
+      <div class="max-w-6xl mx-auto py-8 px-6">
         <h1 class="text-lg font-semibold mb-3.5">Help & support</h1>
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
           <CardComponent class="text-zain-medium" title="Knowledge base" subtitle="FAQs/ How to">
@@ -113,7 +113,7 @@
           </CardComponent>
         </div>
       </div>
-      <div class="flex h-64">
+      <div class="flex h-20">
         <div class="m-auto">
           <p class="text-center CairoLight text-sm text-zinc-500">Version 3.6 (325)</p>
         </div>

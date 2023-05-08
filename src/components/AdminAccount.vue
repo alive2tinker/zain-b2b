@@ -21,7 +21,7 @@
         <div class="flex w-full mx-4 space-x-4">
           <div>
             <h1 :class="{'text-base font-semibold': true, 'mt-1': isPlatform('android')}">Login Or Register</h1>
-            <p class="text-sm" style="color:#5f5f5f">Anyone can join!</p>
+            <p class="text-sm" style="color:#5f5f5f">Be a part of Zain Business today!</p>
           </div>
         </div>
         <ion-buttons class="mx-4" slot="end">

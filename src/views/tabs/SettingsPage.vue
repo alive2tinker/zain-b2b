@@ -233,7 +233,7 @@
 
         <p class="text-center CairoRegular text-zinc-400 py-4">Version 3.6.25</p>
       </div>
-      <FooterComponent/>
+      <FooterComponent class="fixed bottom-0"/>
     </ion-content>
   </ion-page>
 </template>

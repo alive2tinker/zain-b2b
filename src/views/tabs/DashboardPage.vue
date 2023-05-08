@@ -7,7 +7,7 @@
     </HeaderContainer>
     <ion-content :fullscreen="true" id="ion-content-dashboard">
       <div class="max-w-6xl mx-auto p-4 min-h-screen">
-        <div class="bg-zain-warning relative text-white z-50 shadow-0 rounded-xl p-3 mb-4" v-show="crnOpen">
+        <div class="relative text-white z-50 shadow-0 rounded-xl p-3 mb-4" style="background: linear-gradient(90.81deg, #E39604 0%, #F49F01 100%);" v-show="crnOpen">
           <ion-icon :icon="close" @click="crnOpen = false" class="float-right rtl:float-left"></ion-icon>
           <div class="flex space-x-2">
             <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -20,9 +20,9 @@
               <rect x="18.748" y="12.9941" width="8.50354" height="4.00167" rx="2" stroke="white" stroke-width="1.5"
                 stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-            <h1 class="text-base font-bold my-2">Renew Commercial Register</h1>
+            <h1 class="text-base jallal:text-lg font-bold my-2">Renew Commercial Register</h1>
           </div>
-          <p class="pt-2 text-sm">You must renew your commercial register before 21 March 2021 to avoid service interruption.</p>
+          <p class="pt-2 text-sm jallal:text-base jallal:text-lg">You must renew your commercial register before 21 March 2021 to avoid service interruption.</p>
           <svg class="absolute right-0 bottom-0 -z-10" width="113" height="102" viewBox="0 0 113 102" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.2">
@@ -44,12 +44,12 @@
         </div>
         <div class="flex pr-4 justify-between">
           <div class="flex justify-center place-items-center">
-            <h3 class="font-semibold 4xl:CairoBlack font-bold text-lg 4xl:text-2xl mb-[15px] mx-1">
+            <h3 class="font-semibold 4xl:CairoBlack font-boldtext-lg jallal:text-xl 4xl:text-2xl mb-[15px] mx-1">
               Total Bill
             </h3>
           </div>
           <div class="flex justify-center place-items-center -mt-2">
-            <p class="text-zain-primary text-xs">Bills History<span><ion-icon class="absolute pt-1"
+            <p class="text-zain-primary text-xs jallal:text-sm jallal:text-base jallal:text-lg">Bills History<span><ion-icon class="absolute pt-1"
                   :icon="chevronForward"></ion-icon></span></p>
           </div>
         </div>
@@ -62,18 +62,18 @@
               </ion-chip>
             </div>
             <h5 class="text-xl sm:text-[26px] text-zain-primary CairoRegular">1401.58 SAR</h5>
-            <p class="text-zinc-400 text-xs ml-1.5 CairoRegular sm:text-sm my-2">15% VAT Inclusive</p>
+            <p class="text-zinc-400 text-xs jallal:text-sm jallal:text-base jallal:text-lg ml-1.5 CairoRegular sm:text-sm jallal:text-base jallal:text-lg my-2">15% VAT Inclusive</p>
             <hr>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-12 gap-4 mt-3">
-            <p class="CairoRegular py-2 mt-2 text-xs sm:text-sm sm:col-span-7 px-3">Pay your bill before <span class="font-bold">05
+            <p class="CairoRegular py-2 mt-2 text-xs jallal:text-sm jallal:text-base jallal:text-lg sm:text-sm jallal:text-base jallal:text-lg sm:col-span-7 px-3">Pay your bill before <span class="font-bold">05
                 April 2021</span></p>
-            <ion-button expand="block" class="btn-primary text-sm sm:col-span-5 CairoSemiBold mb-4"
+            <ion-button expand="block" class="btn-primary text-sm jallal:text-base jallal:text-lg sm:col-span-5 CairoSemiBold mb-4"
               style="--box-shadow: none;">Pay Now</ion-button>
           </div>
         </div>
-        <div class="bg-white rounded-xl shadow-0 my-4 p-6">
-          <div class="flex space-x-4">
+        <div class="rounded-xl shadow-0 my-4 p-4">
+          <div class="flex space-x-4 bg-white">
             <div>
               <svg width="46" height="45" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect opacity="0.05" x="0.046875" width="45.12" height="45" rx="10" fill="#70A838" />
@@ -89,13 +89,13 @@
               </svg>
             </div>
             <div>
-              <h5 class="font-bold text-base -mt-1">Unbilled Amount</h5>
-              <p class="text-xs text-zain-medium CairoLight">Accumulated to be added in the next bill</p>
-              <p class="font-bold text-sm mt-1 -mb-3">365.90 SAR</p>
+              <h5 class="font-bold text-base jallal:text-lg -mt-1">Unbilled Amount</h5>
+              <p class="text-xs jallal:text-sm jallal:text-base jallal:text-lg text-zain-medium CairoLight">Accumulated to be added in the next bill</p>
+              <p class="font-bold text-sm jallal:text-base jallal:text-lg mt-0.5">365.90 SAR</p>
             </div>
           </div>
         </div>
-        <h3 class="font-semibold 4xl:CairoBlack font-bold text-lg 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
+        <h3 class="font-semibold 4xl:CairoBlack font-boldtext-lg jallal:text-xl 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
           Account Management
         </h3>
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 my-2">
