@@ -196,7 +196,7 @@
 <path d="M27 14H30.286C31.232 14 32 14.768 32 15.714V18" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 <div>
-  <h4 class="font-bold my-1">Pay your company bill</h4>
+  <h4 class="font-bold text-lg 4xl:text-xl">Pay your company bill</h4>
   <p class="text-sm 4xl:text-base font-light">One click to pay all of your company's bills.</p>
 </div>
               </div>
@@ -234,7 +234,7 @@
 </svg>
 
 <div>
-  <h4 class="font-bold my-1">Pay your line bill</h4>
+  <h4 class="font-bold text-lg 4xl:text-xl">Pay your line bill</h4>
   <p class="text-sm 4xl:text-base font-light">Make your line payments hassle-free.</p>
 </div>
               </div>

@@ -20,15 +20,15 @@
           </a>
         </ion-title>
         <ion-tab-bar class="hidden sm:flex" slot="top">
-          <ion-tab-button @click="getToTop('home')" class="text-base text-zain-medium" layout="icon-start" tab="home" href="/tabs/home">
+          <ion-tab-button @click="getToTop('home')" class="text-base 4xl:text-lg text-zain-medium" layout="icon-start" tab="home" href="/tabs/home">
             <ion-icon :icon="HomeIcon" aria-hidden="true"></ion-icon>
             <ion-label class="font-semibold">Explore</ion-label>
           </ion-tab-button>
-          <ion-tab-button @click="getToTop('dashboard')" class="text-base text-zain-medium" layout="icon-start" tab="dashboard" href="/tabs/dashboard"><ion-icon
+          <ion-tab-button @click="getToTop('dashboard')" class="text-base 4xl:text-lg text-zain-medium" layout="icon-start" tab="dashboard" href="/tabs/dashboard"><ion-icon
               :src="DashboardIcon"></ion-icon><ion-label class="font-semibold">About</ion-label></ion-tab-button>
-          <ion-tab-button @click="getToTop('support')" class="text-base text-zain-medium" layout="icon-start" tab="support" href="/tabs/support"><ion-icon
+          <ion-tab-button @click="getToTop('support')" class="text-base 4xl:text-lg text-zain-medium" layout="icon-start" tab="support" href="/tabs/support"><ion-icon
               :src="SupportIcon"></ion-icon><ion-label class="font-semibold">Help</ion-label></ion-tab-button>
-          <ion-tab-button @click="getToTop('settings')" class="text-base text-zain-medium" layout="icon-start" tab="settings" href="/tabs/settings"><ion-icon
+          <ion-tab-button @click="getToTop('settings')" class="text-base 4xl:text-lg text-zain-medium" layout="icon-start" tab="settings" href="/tabs/settings"><ion-icon
               :src="SettingsIcon"></ion-icon><ion-label class="font-semibold">Settings</ion-label></ion-tab-button>
         </ion-tab-bar>
         <ion-buttons class="mx-4" slot="end">

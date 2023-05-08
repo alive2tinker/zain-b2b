@@ -4,8 +4,8 @@
             <slot name="icon"></slot>
         </div>
         <div class="flex flex-col h-[80px] md:h-[110px] justify-end">
-            <h5 :class="{'text-sm sm:text-lg font-bold': true}" style="white-space: nowrap;">{{ title }}</h5>
-            <h6 class="text-sm">{{ subtitle }}</h6>
+            <h5 :class="{'text-sm sm:text-lg 4xl:text-2xl font-bold': true}" style="white-space: nowrap;">{{ title }}</h5>
+            <h6 class="text-sm 4xl:text-base">{{ subtitle }}</h6>
         </div>
         <div class="absolute bottom-0 right-0 rtl:left-0">
             <slot name="pattern"></slot>
