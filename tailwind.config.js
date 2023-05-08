@@ -37,7 +37,7 @@ module.exports = {
         },
       },
       screens:{
-        'jallal': { 'raw': '(min-height: 2560px) and (min-height: 1440px)' },
+        'jallal': { 'raw': '(min-width: 2560px) and (min-height: 1440px)' },
       }
     },
   },
