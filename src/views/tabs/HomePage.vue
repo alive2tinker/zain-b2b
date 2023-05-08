@@ -219,7 +219,7 @@
                     >{{ numberInputLabel }}</label
                   >
                 </div>
-                <ion-button expand="block" class="h-12 my-4" style="--border-radius:10px; --box-shadow: none;">Proceed to Pay</ion-button>
+                <ion-button expand="block" class="h-12 my-4 text-base 4xl:text-lg" style="--border-radius:10px; --box-shadow: none;">Proceed to Pay</ion-button>
                 <p class=" text-base 4xl:text-lg text-zain-primary">What does “pay all bills” mean?</p>
               </div>
             </div>
@@ -257,7 +257,7 @@
                     >Line Number</label
                   >
                 </div>
-                <ion-button expand="block" class=" h-12 my-4" style="--border-radius:10px;--box-shadow: none;">Proceed to Pay</ion-button>
+                <ion-button expand="block" class=" h-12 my-4 text-base 4xl:text-lg" style="--border-radius:10px;--box-shadow: none;">Proceed to Pay</ion-button>
                 <p class=" text-base 4xl:text-lg text-zain-primary">I don’t know my number</p>
               </div>
             </div>
