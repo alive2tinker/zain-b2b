@@ -35,9 +35,6 @@ module.exports = {
           inactive: '#f4f4f4',
           warning: '#F49F01'
         },
-      },
-      screens:{
-        'jallal': { 'raw': '(min-width: 2560px) and (min-height: 1440px)' },
       }
     },
   },

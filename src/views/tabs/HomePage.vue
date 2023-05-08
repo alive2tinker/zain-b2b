@@ -62,7 +62,7 @@
         </div>
       </div>
       <div class="max-w-6xl mx-auto px-6">
-        <h3 class="font-semibold 4xl:CairoBlack font-boldtext-lg jallal:text-xl 4xl:text-2xl mt-9 mb-[15px] mx-1">
+        <h3 class="font-semibold 4xl:CairoBlack font-boldtext-lg 4xl:text-xl 4xl:text-2xl mt-9 mb-[15px] mx-1">
           QuickPay
         </h3>
          <!-- height should be 350px; -->
@@ -111,16 +111,16 @@
                 </svg>
               </div>
               <div>
-                <h5 class="text-sm jallal:text-base font-bold text-black">
+                <h5 class="text-sm 4xl:text-base font-bold text-black">
                   Pay Bill or Recharge Line
                 </h5>
-                <p class="text-xs jallal:text-sm text-black">Select Line Type</p>
+                <p class="text-xs 4xl:text-sm text-black">Select Line Type</p>
               </div>
             </div>
             <div class="grid grid-cols-2 gap-2 my-2">
               <button
                 :class="{
-                  'w-full normal-case sm:h-10 h-[45px] payment-tabs rounded-xl bg-white text-sm jallal:text-base border hover:border-zain-primary hover:bg-white': true,
+                  'w-full normal-case sm:h-10 h-[45px] payment-tabs rounded-xl bg-white text-sm 4xl:text-base border hover:border-zain-primary hover:bg-white': true,
                   'border border-zain-primary text-zain-primary font-semibold':
                     currentTab === 'Bill Payment',
                   'btn-shadow text-zain-medium inactive-border': currentTab != 'Bill Payment',
@@ -131,7 +131,7 @@
               <button
                 fill="clear"
                 :class="{
-                  'w-full normal-case sm:h-10 h-[45px]  payment-tabs rounded-xl bg-white border text-sm jallal:text-base hover:border-zain-primary hover:bg-white': true,
+                  'w-full normal-case sm:h-10 h-[45px]  payment-tabs rounded-xl bg-white border text-sm 4xl:text-base hover:border-zain-primary hover:bg-white': true,
                   'border border-zain-primary text-zain-primary font-semibold':
                     currentTab === 'Recharge',
                   'btn-shadow text-zain-medium inactive-border': currentTab != 'Recharge',
@@ -197,7 +197,7 @@
 </svg>
 <div>
   <h4 class="font-bold my-1">Pay your company bill</h4>
-  <p class="text-sm jallal:text-base font-light">One click to pay all of your company's bills.</p>
+  <p class="text-sm 4xl:text-base font-light">One click to pay all of your company's bills.</p>
 </div>
               </div>
               <div class="pt-4">
@@ -220,7 +220,7 @@
                   >
                 </div>
                 <ion-button expand="block" class="h-12 my-4" style="--border-radius:10px; --box-shadow: none;">Proceed to Pay</ion-button>
-                <p class=" text-base jallal:text-lg text-zain-primary">What does “pay all bills” mean?</p>
+                <p class=" text-base 4xl:text-lg text-zain-primary">What does “pay all bills” mean?</p>
               </div>
             </div>
             <div class="bg-white rounded-xl shadow-0 p-4">
@@ -235,7 +235,7 @@
 
 <div>
   <h4 class="font-bold my-1">Pay your line bill</h4>
-  <p class="text-sm jallal:text-base font-light">Make your line payments hassle-free.</p>
+  <p class="text-sm 4xl:text-base font-light">Make your line payments hassle-free.</p>
 </div>
               </div>
               <div class="pt-4">
@@ -258,11 +258,11 @@
                   >
                 </div>
                 <ion-button expand="block" class=" h-12 my-4" style="--border-radius:10px;--box-shadow: none;">Proceed to Pay</ion-button>
-                <p class=" text-base jallal:text-lg text-zain-primary">I don’t know my number</p>
+                <p class=" text-base 4xl:text-lg text-zain-primary">I don’t know my number</p>
               </div>
             </div>
         </div>
-        <h3 class="font-semibold 4xl:CairoBlack font-boldtext-lg jallal:text-xl 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
+        <h3 class="font-semibold 4xl:CairoBlack font-boldtext-lg 4xl:text-xl 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
           Buy a New Service from Zain
         </h3>
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
@@ -804,7 +804,7 @@
             </template>
           </CardComponent>
         </div>
-        <h3 class="font-semibold 4xl:CairoBlack font-boldtext-lg jallal:text-xl 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
+        <h3 class="font-semibold 4xl:CairoBlack font-boldtext-lg 4xl:text-xl 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
           Zain World
         </h3>
         <div class="grid grid-cols-2 sm:grid-cols-4 sm:auto-rows-auto my-4 gap-4">

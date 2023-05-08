@@ -20,9 +20,9 @@
               <rect x="18.748" y="12.9941" width="8.50354" height="4.00167" rx="2" stroke="white" stroke-width="1.5"
                 stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-            <h1 class="text-base jallal:text-lg font-bold my-2">Renew Commercial Register</h1>
+            <h1 class="text-base 4xl:text-lg font-bold my-2">Renew Commercial Register</h1>
           </div>
-          <p class="pt-2 text-sm jallal:text-base jallal:text-lg">You must renew your commercial register before 21 March 2021 to avoid service interruption.</p>
+          <p class="pt-2 text-sm 4xl:text-base 4xl:text-lg">You must renew your commercial register before 21 March 2021 to avoid service interruption.</p>
           <svg class="absolute right-0 bottom-0 -z-10" width="113" height="102" viewBox="0 0 113 102" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.2">
@@ -44,12 +44,12 @@
         </div>
         <div class="flex pr-4 justify-between">
           <div class="flex justify-center place-items-center">
-            <h3 class="font-semibold 4xl:CairoBlack font-boldtext-lg jallal:text-xl 4xl:text-2xl mb-[15px] mx-1">
+            <h3 class="font-semibold 4xl:CairoBlack font-boldtext-lg 4xl:text-xl 4xl:text-2xl mb-[15px] mx-1">
               Total Bill
             </h3>
           </div>
           <div class="flex justify-center place-items-center -mt-2">
-            <p class="text-zain-primary text-xs jallal:text-sm jallal:text-base jallal:text-lg">Bills History<span><ion-icon class="absolute pt-1"
+            <p class="text-zain-primary text-xs 4xl:text-sm 4xl:text-base 4xl:text-lg">Bills History<span><ion-icon class="absolute pt-1"
                   :icon="chevronForward"></ion-icon></span></p>
           </div>
         </div>
@@ -62,13 +62,13 @@
               </ion-chip>
             </div>
             <h5 class="text-xl sm:text-[26px] text-zain-primary CairoRegular">1401.58 SAR</h5>
-            <p class="text-zinc-400 text-xs jallal:text-sm jallal:text-base jallal:text-lg ml-1.5 CairoRegular sm:text-sm jallal:text-base jallal:text-lg my-2">15% VAT Inclusive</p>
+            <p class="text-zinc-400 text-xs 4xl:text-sm 4xl:text-base 4xl:text-lg ml-1.5 CairoRegular sm:text-sm 4xl:text-base 4xl:text-lg my-2">15% VAT Inclusive</p>
             <hr>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-12 gap-4 mt-3">
-            <p class="CairoRegular py-2 mt-2 text-xs jallal:text-sm jallal:text-base jallal:text-lg sm:text-sm jallal:text-base jallal:text-lg sm:col-span-7 px-3">Pay your bill before <span class="font-bold">05
+            <p class="CairoRegular py-2 mt-2 text-xs 4xl:text-sm 4xl:text-base 4xl:text-lg sm:text-sm 4xl:text-base 4xl:text-lg sm:col-span-7 px-3">Pay your bill before <span class="font-bold">05
                 April 2021</span></p>
-            <ion-button expand="block" class="btn-primary text-sm jallal:text-base jallal:text-lg sm:col-span-5 CairoSemiBold mb-4"
+            <ion-button expand="block" class="btn-primary text-sm 4xl:text-base 4xl:text-lg sm:col-span-5 CairoSemiBold mb-4"
               style="--box-shadow: none;">Pay Now</ion-button>
           </div>
         </div>
@@ -89,13 +89,13 @@
               </svg>
             </div>
             <div>
-              <h5 class="font-bold text-base jallal:text-lg -mt-1">Unbilled Amount</h5>
-              <p class="text-xs jallal:text-sm jallal:text-base jallal:text-lg text-zain-medium CairoLight">Accumulated to be added in the next bill</p>
-              <p class="font-bold text-sm jallal:text-base jallal:text-lg mt-0.5">365.90 SAR</p>
+              <h5 class="font-bold text-base 4xl:text-lg -mt-1">Unbilled Amount</h5>
+              <p class="text-xs 4xl:text-sm 4xl:text-base 4xl:text-lg text-zain-medium CairoLight">Accumulated to be added in the next bill</p>
+              <p class="font-bold text-sm 4xl:text-base 4xl:text-lg mt-0.5">365.90 SAR</p>
             </div>
           </div>
         </div>
-        <h3 class="font-semibold 4xl:CairoBlack font-boldtext-lg jallal:text-xl 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
+        <h3 class="font-semibold 4xl:CairoBlack font-boldtext-lg 4xl:text-xl 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
           Account Management
         </h3>
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 my-2">
