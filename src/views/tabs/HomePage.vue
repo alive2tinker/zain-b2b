@@ -111,7 +111,7 @@
                 </svg>
               </div>
               <div>
-                <h5 class="text-sm 4xl:text-base font-bold text-black">
+                <h5 class="text-sm 4xl:text-base font-bold text-zain-medium">
                   Pay Bill or Recharge Line
                 </h5>
                 <p class="text-xs 4xl:text-sm text-black">Select Line Type</p>
@@ -196,7 +196,7 @@
 <path d="M27 14H30.286C31.232 14 32 14.768 32 15.714V18" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 <div>
-  <h4 class="font-bold text-lg 4xl:text-xl">Pay your company bill</h4>
+  <h4 class="font-bold text-lg 4xl:text-xl text-zain-medium">Pay your company bill</h4>
   <p class="text-sm 4xl:text-base font-light">One click to pay all of your company's bills.</p>
 </div>
               </div>
@@ -235,7 +235,7 @@
 </svg>
 
 <div>
-  <h4 class="font-bold text-lg 4xl:text-xl">Pay your line bill</h4>
+  <h4 class="font-bold text-lg 4xl:text-xl text-zain-medium">Pay your line bill</h4>
   <p class="text-sm 4xl:text-base font-light">Make your line payments hassle-free.</p>
 </div>
               </div>
@@ -264,7 +264,7 @@
               </div>
             </div>
         </div>
-        <h3 class="font-semibold 4xl:CairoBlack font-boldtext-lg 4xl:text-xl 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
+        <h3 class="font-semibold 4xl:CairoBlack text-zain-medium font-boldtext-lg 4xl:text-xl 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
           Buy a New Service from Zain
         </h3>
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3.5">
@@ -806,7 +806,7 @@
             </template>
           </CardComponent>
         </div>
-        <h3 class="font-semibold 4xl:CairoBlack font-boldtext-lg 4xl:text-xl 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
+        <h3 class="font-semibold 4xl:CairoBlack text-zain-medium font-boldtext-lg 4xl:text-xl 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
           Zain World
         </h3>
         <div class="grid grid-cols-2 sm:grid-cols-4 sm:auto-rows-auto my-4 gap-4">
