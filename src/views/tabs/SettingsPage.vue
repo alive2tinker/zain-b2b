@@ -231,9 +231,13 @@
           </div>
         </div>
 
-        <p class="text-center CairoRegular text-zinc-400 py-4">Version 3.6.25</p>
+        <div class="flex h-20">
+        <div class="m-auto">
+          <p class="text-center CairoLight text-sm text-zinc-500">Version 3.6 (325)</p>
+        </div>
       </div>
-      <FooterComponent class="fixed bottom-0"/>
+      </div>
+      <FooterComponent></FooterComponent>
     </ion-content>
   </ion-page>
 </template>

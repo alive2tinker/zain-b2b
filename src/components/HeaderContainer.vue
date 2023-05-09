@@ -1,9 +1,9 @@
 <template>
   <div>
     <ion-header class="ion-no-border bg-white z-50">
-    <ion-toolbar class="border-b pb-[13px]">
+    <ion-toolbar class="border-b">
       <div :class="{'max-w-7xl mx-auto flex':true, 'pt-3': isPlatform('desktop')}">
-        <ion-title>
+        <ion-title class="pb-[10px]">
           <a href="/tabs/home">
             <svg width="86" height="45" viewBox="0 0 86 45" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M36.5564 7.14409C40.3004 7.14409 43.5203 8.48229 45.6859 10.8136C47.7828 13.0707 48.9527 15.978 48.9527 20.2946V30.3383C48.8474 30.3441 48.7199 30.3506 48.6219 30.3506C47.2645 30.3506 46.1296 29.9188 45.361 29.1523C44.6465 28.4261 44.2584 27.4361 44.2584 25.9869V21.2801C44.2584 17.5594 43.3503 15.199 41.8071 13.6689C40.4848 12.3613 38.7394 11.6116 36.5693 11.6116C32.2423 11.6116 29.352 14.6638 29.352 19.1234C29.352 23.6596 32.2264 26.1385 35.5136 26.1385C38.59 26.1385 40.4935 24.2534 41.1569 20.7984C41.9754 22.0146 42.3591 23.295 42.3591 24.4853C42.3591 27.7025 39.58 30.4406 34.9805 30.4406C29.0078 30.4406 24.4158 25.9555 24.4158 19.2337C24.4158 12.3904 29.3855 7.14409 36.5564 7.14409ZM81.331 7.37837C82.6607 7.37837 83.753 7.80428 84.5129 8.5746C85.2346 9.301 85.6198 10.2905 85.6198 11.7389V26.2191C85.6198 27.4849 85.2728 28.5927 84.598 29.3125C84.0019 29.9485 83.1217 30.3506 82.0326 30.3506C80.5753 30.3506 79.4655 29.7312 78.0466 27.8913C76.6087 26.0332 69.1159 16.2291 67.1392 13.652C67.0895 13.5877 67.0498 13.5596 66.9898 13.5596C66.9181 13.5596 66.8625 13.6235 66.8625 13.7494V30.3396C66.76 30.3441 66.6986 30.3506 66.5974 30.3506C65.2692 30.3506 64.1771 29.9245 63.4185 29.1523C62.6953 28.4261 62.3173 27.4361 62.3173 25.9869V11.512C62.3173 10.2409 62.6556 9.13526 63.3262 8.4165C63.928 7.77817 64.8051 7.37837 65.8988 7.37837C67.3633 7.37837 68.4776 7.98889 69.8863 9.83662C71.2349 11.6005 77.4259 19.6832 80.7922 24.0777C80.8433 24.136 80.8769 24.1662 80.9371 24.1662C81.0087 24.1662 81.0645 24.1046 81.0645 23.979V7.38409C81.1685 7.38112 81.2315 7.37837 81.331 7.37837ZM53.5388 7.29115C54.8933 7.29328 56.031 7.71514 56.7939 8.48674C57.5131 9.21314 57.8982 10.2031 57.8982 11.651V30.3396C57.7883 30.3441 57.6593 30.3506 57.5555 30.3441C56.2082 30.3441 55.0661 29.9188 54.3136 29.1523C53.5916 28.4229 53.1995 27.4346 53.1995 25.9869V7.299C53.3075 7.29327 53.4393 7.29115 53.5388 7.29115ZM17.579 7.63153C19.4343 7.63153 20.5794 7.98295 21.3483 8.63168C21.9879 9.16773 22.404 10.0346 22.404 10.935C22.404 12.3817 21.8709 13.3714 19.348 15.4188C17.8822 16.6091 8.33803 24.3171 6.90008 25.4723C6.79164 25.5589 6.74199 25.6451 6.74199 25.7185C6.74199 25.8276 6.84151 25.8942 7.02593 25.8942H17.5849C19.6128 25.8942 20.6819 26.1796 21.5166 26.941C22.2355 27.6023 22.5751 28.6449 22.5751 29.8492V30.0001H5.56761C3.71076 30.0001 2.56143 29.6499 1.79259 28.9991C1.15871 28.466 0.735352 27.6023 0.735352 26.6996C0.735352 25.2608 1.23893 24.2468 3.77528 22.2128C5.97315 20.4518 14.7837 13.3387 16.2951 12.1238C16.412 12.0311 16.4619 11.9761 16.4619 11.8851C16.4619 11.7888 16.3592 11.7389 16.1705 11.7389H5.5031C3.82515 11.7389 2.58053 11.1899 1.92437 10.2496C1.50568 9.64669 1.327 8.72846 1.327 7.88853C1.327 7.80428 1.327 7.71514 1.33145 7.63153H17.579ZM55.5508 0C57.0825 0 58.3301 1.23825 58.3301 2.77318C58.3301 4.30916 57.0825 5.54783 55.5508 5.54783C54.0163 5.54783 52.7748 4.30916 52.7748 2.77318C52.7748 1.23825 54.0163 0 55.5508 0Z" fill="#70A838"/>
@@ -20,16 +20,22 @@
           </a>
         </ion-title>
         <ion-tab-bar class="hidden sm:flex" slot="top">
-          <ion-tab-button @click="getToTop('home')" class="text-base 4xl:text-lg text-zain-medium" layout="icon-start" tab="home" href="/tabs/home">
-            <ion-icon :icon="HomeIcon" aria-hidden="true"></ion-icon>
-            <ion-label class="font-semibold">Explore</ion-label>
+          <ion-tab-button @click="getToTop('home')" class="text-base 4xl:text-lg text-[#5f5f5f]" layout="icon-start" tab="home" href="/tabs/home">
+            <!-- <ion-icon :icon="HomeIcon" aria-hidden="true"></ion-icon> -->
+            <ion-label class="font-medium">Explore</ion-label>
           </ion-tab-button>
-          <ion-tab-button @click="getToTop('dashboard')" class="text-base 4xl:text-lg text-zain-medium" layout="icon-start" tab="dashboard" href="/tabs/dashboard"><ion-icon
-              :src="DashboardIcon"></ion-icon><ion-label class="font-semibold">About</ion-label></ion-tab-button>
-          <ion-tab-button @click="getToTop('support')" class="text-base 4xl:text-lg text-zain-medium" layout="icon-start" tab="support" href="/tabs/support"><ion-icon
-              :src="SupportIcon"></ion-icon><ion-label class="font-semibold">Help</ion-label></ion-tab-button>
-          <ion-tab-button @click="getToTop('settings')" class="text-base 4xl:text-lg text-zain-medium" layout="icon-start" tab="settings" href="/tabs/settings"><ion-icon
-              :src="SettingsIcon"></ion-icon><ion-label class="font-semibold">Settings</ion-label></ion-tab-button>
+          <ion-tab-button @click="getToTop('dashboard')" class="text-base 4xl:text-lg text-[#5f5f5f]" layout="icon-start" tab="dashboard" href="/tabs/dashboard">
+            <!-- <ion-icon
+              :src="DashboardIcon"></ion-icon> -->
+              <ion-label class="font-medium">Dashboard</ion-label></ion-tab-button>
+          <ion-tab-button @click="getToTop('support')" class="text-base 4xl:text-lg text-[#5f5f5f]" layout="icon-start" tab="support" href="/tabs/support">
+            <!-- <ion-icon
+              :src="SupportIcon"></ion-icon> -->
+              <ion-label class="font-medium">Help</ion-label></ion-tab-button>
+          <ion-tab-button @click="getToTop('settings')" class="text-base 4xl:text-lg text-[#5f5f5f]" layout="icon-start" tab="settings" href="/tabs/settings">
+            <!-- <ion-icon
+              :src="SettingsIcon"></ion-icon> -->
+              <ion-label class="font-medium">Settings</ion-label></ion-tab-button>
         </ion-tab-bar>
         <ion-buttons class="mx-4" slot="end">
           <language-dropdown v-show="!isPlatform('ios') && !isPlatform('android')"></language-dropdown>
@@ -75,12 +81,18 @@ ion-tab-bar {
 }
 
 ion-tab-button.tab-selected {
-  /* border-bottom: 2px solid var(--ion-color-primary); */
-  color: var(--ion-color-primary);
+  border-bottom: 2px solid var(--ion-color-primary);
+  color: black;
 }
 
-ion-tab-button {
-  max-width: 120px !important;
+ion-tab-button:hover {
+  --color-selected: black !important;
+}
+
+ion-tab-button{
+  max-width: 140px !important;
+  --padding-start:0px !important;
+  --padding-end:0px !important;
 }
 
 a.button-native>span.button-inner {

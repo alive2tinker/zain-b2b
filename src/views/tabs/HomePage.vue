@@ -216,6 +216,7 @@
                     for="pay-bill-number-input"
                     class="number-label font-light absolute left-3 px-1"
                     style="font-family:  !important"
+                    @click="focusOnInput"
                     >{{ numberInputLabel }}</label
                   >
                 </div>
@@ -254,6 +255,7 @@
                     for="pay-bill-number-input"
                     class="number-label font-light absolute left-3 px-1"
                     style="font-family:  !important"
+                    @click="focusOnInput"
                     >Line Number</label
                   >
                 </div>
@@ -265,7 +267,7 @@
         <h3 class="font-semibold 4xl:CairoBlack font-boldtext-lg 4xl:text-xl 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
           Buy a New Service from Zain
         </h3>
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3.5">
           <CardComponent
             subtitle="Zain has plans for all."
             title="Zain Mobile Plans"
@@ -1027,6 +1029,11 @@ function updateLabel(e){
   }else{
     e.target.nextSibling.classList.remove("number-label-active");
   }
+}
+
+function focusOnInput(e){
+  e.target.closest('.number-input-container').children[0].focus();
+  // alert(e.closest('.number-input'));
 }
 
 const currentTab = ref("Bill Payment");

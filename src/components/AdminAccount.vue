@@ -1,17 +1,18 @@
 <template>
   <ion-header
     :class="{ 'ion-no-border bg-white': true, '-mt-8': isPlatform('ios') && !isPlatform('mobileweb') }">
-    <ion-toolbar class="border-b pb-2.5 border-gray-200" v-if="isLoggedIn">
-      <div class="max-w-7xl mx-auto flex">
-        <div class="flex w-full mx-4 space-x-4">
+    <ion-toolbar :class="{'border-b-[1px] ion-no-padding border-gray-200': true, '-pt-5': isPlatform('ios')}" v-if="isLoggedIn">
+      <div class="max-w-7xl mx-auto flex py-[10px]">
+        <div class="flex w-full mx-4 space-x-2.5">
+          <img class="w-[45px] border-[1.5px] border-gray-200 aspect-square rounded-xl" src="https://pbs.twimg.com/profile_images/1630134657244168194/wEgyvsSS_400x400.jpg" alt="">
           <div>
-            <h1 class="font-bold text-base">Hailah Alrashed</h1>
-            <p class="text-zain-primary">Edit Account Details</p>
+            <h1><b>Hailah Alrashed</b></h1>
+            <p class="text-zain-medium">Edit Account Details</p>
           </div>
         </div>
         <ion-buttons class="mx-4" slot="end">
           <ion-button>
-            <ion-icon :icon="chevronDown"></ion-icon>
+            <ion-icon :icon="chevronForward"></ion-icon>
           </ion-button>
         </ion-buttons>
       </div>
@@ -41,7 +42,7 @@
 </template>
 <script setup lang="ts">
 import { IonToolbar, IonHeader, IonButtons, isPlatform } from '@ionic/vue';
-import { chevronDown } from 'ionicons/icons';
+import { chevronDown, chevronForward } from 'ionicons/icons';
 import { useStore } from 'vuex';
 import { computed } from 'vue';
 
