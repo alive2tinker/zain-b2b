@@ -44,7 +44,7 @@
         </div>
         <div class="flex pr-4 justify-between">
           <div class="flex justify-center place-items-center">
-            <h3 class="font-semibold 4xl:CairoBlack font-boldtext-lg 4xl:text-xl 4xl:text-2xl mb-[15px] mx-1">
+            <h3 class="font-semibold text-zain-medium font-bold text-lg 4xl:text-xl 4xl:text-2xl mb-[15px] mx-1">
               Total Bill
             </h3>
           </div>
@@ -56,7 +56,7 @@
         <div class="bg-white rounded-xl shadow-0 p-2">
           <div class="px-3 space-y-2">
             <div class="flex justify-between space-x-4 sm:justify-start">
-              <h4 class="text-lg font-bold mt-1">Total Payment Required</h4>
+              <h4 class="text-lg font-bold text-zain-medium mt-1">Total Payment Required</h4>
               <ion-chip class="rounded-md" style="background: #FAe8e8; height:23px;">
                 <h6 class="CairoRegular" style="color: #C50000">Unpaid</h6>
               </ion-chip>
@@ -72,7 +72,7 @@
               style="--box-shadow: none;">Pay Now</ion-button>
           </div>
         </div>
-        <div class="rounded-xl shadow-0 my-4 p-4">
+        <div class="rounded-xl shadow-0 bg-white my-4 p-4">
           <div class="flex space-x-4 bg-white">
             <div>
               <svg width="46" height="45" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -89,13 +89,13 @@
               </svg>
             </div>
             <div>
-              <h5 class="font-bold text-base 4xl:text-lg -mt-1">Unbilled Amount</h5>
+              <h5 class="font-bold text-base 4xl:text-lg text-zain-medium -mt-1">Unbilled Amount</h5>
               <p class="text-xs 4xl:text-sm 4xl:text-base 4xl:text-lg text-zain-medium CairoLight">Accumulated to be added in the next bill</p>
               <p class="font-bold text-sm 4xl:text-base 4xl:text-lg mt-0.5">365.90 SAR</p>
             </div>
           </div>
         </div>
-        <h3 class="font-semibold 4xl:CairoBlack font-boldtext-lg 4xl:text-xl 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
+        <h3 class="font-semibold 4xl:CairoBlack text-zain-medium font-boldtext-lg 4xl:text-xl 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
           Account Management
         </h3>
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 my-2">

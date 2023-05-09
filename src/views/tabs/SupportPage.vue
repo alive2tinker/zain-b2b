@@ -7,7 +7,6 @@
     </HeaderContainer>
     <ion-content :fullscreen="true" id="ion-content-support">
       <div class="max-w-6xl mx-auto py-8 px-6">
-        <h1 class="text-lg font-semibold mb-3.5">Help & support</h1>
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
           <CardComponent class="text-zain-medium" title="Knowledge base" subtitle="FAQs/ How to">
             <template #icon>
@@ -78,8 +77,7 @@
             </template>
           </CardComponent>
         </div>
-        <h1 class="text-lg font-semibold mb-3.5 mt-8">Feedback</h1>
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="grid grid-cols-2 sm:grid-cols-4 my-4 gap-4">
           <CardComponent class="text-zain-medium" title="Contact us" subtitle="Ways to reach us">
             <template #icon>
               <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
