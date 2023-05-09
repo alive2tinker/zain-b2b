@@ -62,7 +62,7 @@
         </div>
       </div>
       <div class="max-w-6xl mx-auto px-6">
-        <h3 class="font-semibold 4xl:CairoBlack font-boldtext-lg 4xl:text-xl 4xl:text-2xl mt-9 mb-[15px] mx-1">
+        <h3 class="font-semibold 4xl:CairoBlack font-bold text-xl 4xl:text-2xl mt-9 mb-[15px] mx-1">
           QuickPay
         </h3>
          <!-- height should be 350px; -->
@@ -196,7 +196,7 @@
 <path d="M27 14H30.286C31.232 14 32 14.768 32 15.714V18" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 <div>
-  <h4 class="font-bold text-lg 4xl:text-xl text-zain-medium">Pay your company bill</h4>
+  <h4 class="font-bold text-base 4xl:text-xl text-zain-medium">Pay your company bill</h4>
   <p class="text-sm 4xl:text-base font-light">One click to pay all of your company's bills.</p>
 </div>
               </div>
@@ -235,7 +235,7 @@
 </svg>
 
 <div>
-  <h4 class="font-bold text-lg 4xl:text-xl text-zain-medium">Pay your line bill</h4>
+  <h4 class="font-bold text-base 4xl:text-xl text-zain-medium">Pay your line bill</h4>
   <p class="text-sm 4xl:text-base font-light">Make your line payments hassle-free.</p>
 </div>
               </div>
