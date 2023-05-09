@@ -81,7 +81,7 @@ ion-tab-bar {
 }
 
 ion-tab-button.tab-selected {
-  border-bottom: 4px solid var(--ion-color-primary);
+  border-bottom: 2.5px solid var(--ion-color-primary);
   color: black;
 }
 
