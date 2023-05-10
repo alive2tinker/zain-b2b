@@ -6,12 +6,12 @@
       </template>
     </HeaderContainer>
     <ion-content :fullscreen="true" id="ion-content-settings">
-      <div class="max-w-4xl mt-7 mx-auto px-4 space-y-4 4xl:min-h-[80vh]">
+      <div class="max-w-4xl mt-9 mx-auto px-4 space-y-4 4xl:min-h-[80vh]">
         <!-- Account Details-->
         <!-- <div class="rounded-xl flex space-x-4 rounded-md bg-white shadow-0 p-4 mx-2 py-4" v-show="isLoggedIn && isPlatform('desktop') ">
           <div class="mt-0.5 space-y-1">
             <p class="text-base font-bold">Hailah Alrashed</p>
-            <p class="text-xs 4xl:text-base CairoRegular text-zain-primary">Edit Account Details</p>
+            <p class="text-sm 4xl:text-base CairoRegular text-zain-primary">Edit Account Details</p>
           </div>
           <div class="flex" style="margin-left:auto;">
             <div class="m-auto">
@@ -37,8 +37,8 @@
               stroke="#669933" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
           <div class="mt-0.5 space-y-1">
-            <p class="text-sm 4xl:text-lg font-bold">Zain Lines Management</p>
-            <p class="text-xs 4xl:text-base CairoRegular">My lines, managed lines, add a new line</p>
+            <p class="text-base 4xl:text-lg font-bold">Zain Lines Management</p>
+            <p class="text-sm 4xl:text-base CairoRegular">My lines, managed lines, add a new line</p>
           </div>
           <div class="flex" style="margin-left:auto;">
             <div class="m-auto">
@@ -58,8 +58,8 @@
           </svg>
 
           <div class="mt-0.5 space-y-1">
-            <p class="text-sm 4xl:text-lg  font-bold">Payment Management</p>
-            <p class="text-xs 4xl:text-base  CairoRegular">Wallet & cards, auto payments</p>
+            <p class="text-base 4xl:text-lg  font-bold">Payment Management</p>
+            <p class="text-sm 4xl:text-base  CairoRegular">Wallet & cards, auto payments</p>
           </div>
           <div class="flex" style="margin-left:auto">
             <div class="m-auto">
@@ -84,8 +84,8 @@
 
 
           <div class="mt-0.5 space-y-1">
-            <p class="text-sm 4xl:text-lg  font-bold">Notification Settings</p>
-            <p class="text-xs 4xl:text-base  CairoRegular">Explore, line dashboard, help, more</p>
+            <p class="text-base 4xl:text-lg  font-bold">Notification Settings</p>
+            <p class="text-sm 4xl:text-base  CairoRegular">Explore, line dashboard, help, more</p>
           </div>
           <div class="flex" style="margin-left:auto">
             <div class="m-auto">
@@ -111,8 +111,8 @@
 
 
           <div class="mt-0.5 space-y-1">
-            <p class="text-sm 4xl:text-lg  font-bold">Security Management</p>
-            <p class="text-xs 4xl:text-base  CairoRegular">Sessions, numbers & account security</p>
+            <p class="text-base 4xl:text-lg  font-bold">Security Management</p>
+            <p class="text-sm 4xl:text-base  CairoRegular">Sessions, numbers & account security</p>
           </div>
           <div class="flex" style="margin-left:auto">
             <div class="m-auto">
@@ -136,8 +136,8 @@
 
 
           <div class="mt-0.5 space-y-1">
-            <p class="text-sm 4xl:text-lg  font-bold">Account History</p>
-            <p class="text-xs 4xl:text-base  CairoRegular">All activities under your account</p>
+            <p class="text-base 4xl:text-lg  font-bold">Account History</p>
+            <p class="text-sm 4xl:text-base  CairoRegular">All activities under your account</p>
           </div>
           <div class="flex" style="margin-left:auto">
             <div class="m-auto">
@@ -175,8 +175,8 @@
 
 
           <div class="mt-0.5 space-y-1">
-            <p class="text-sm 4xl:text-lg  font-bold">Order Tracking</p>
-            <p class="text-xs 4xl:text-base  CairoRegular">Check your orders status</p>
+            <p class="text-base 4xl:text-lg  font-bold">Order Tracking</p>
+            <p class="text-sm 4xl:text-base  CairoRegular">Check your orders status</p>
           </div>
           <div class="flex" style="margin-left:auto">
             <div class="m-auto">
@@ -198,8 +198,8 @@
             <path d="M13 23H31" stroke="#669933" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
           <div class="mt-0.5 space-y-1">
-            <p class="text-sm 4xl:text-lg  font-bold">Language</p>
-            <p class="text-xs 4xl:text-base  CairoRegular">English</p>
+            <p class="text-base 4xl:text-lg  font-bold">Language</p>
+            <p class="text-sm 4xl:text-base  CairoRegular">English</p>
           </div>
           <div class="flex" style="margin-left:auto">
             <div class="m-auto">
@@ -222,7 +222,7 @@
           </svg>
 
           <div class="mt-0.5 space-y-1">
-            <p class="text-sm 4xl:text-lg  CairoMedium text-zain-red mt-2.5">Log Out</p>
+            <p class="text-base 4xl:text-lg  CairoMedium text-zain-red mt-2.5">Log Out</p>
           </div>
           <div class="flex" style="margin-left:auto">
             <div class="m-auto">
@@ -233,7 +233,7 @@
 
         <div class="flex h-20">
         <div class="m-auto">
-          <p class="text-center CairoLight text-sm text-zinc-500">Version 3.6 (325)</p>
+          <p class="text-center CairoLight text-base text-zinc-500">Version 3.6 (325)</p>
         </div>
       </div>
       </div>

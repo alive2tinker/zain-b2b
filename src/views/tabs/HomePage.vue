@@ -6,7 +6,7 @@
       </template>
     </HeaderContainer>
     <ion-content :fullscreen="true" id="ion-content-home">
-      <div class="bg-white md:rounded-xl p-2">
+      <div class="bg-white md:rounded-xl p-1.5">
         <div class="max-w-screen-2xl mx-auto px-2 lg:px-20 md:px-10">
           <Splide
             class="pt-[20px] md:pt-[30px]"
@@ -62,7 +62,7 @@
         </div>
       </div>
       <div class="max-w-6xl mx-auto px-6">
-        <h3 class="font-semibold 4xl:CairoBlack font-bold text-xl 4xl:text-2xl mt-9 mb-[15px] mx-1">
+        <h3 class="4xl:CairoBlack font-semibold text-lg 4xl:text-2xl mt-9 mb-[15px] mx-1">
           QuickPay
         </h3>
          <!-- height should be 350px; -->
@@ -197,7 +197,7 @@
 </svg>
 <div>
   <h4 class="font-bold text-base 4xl:text-xl text-zain-medium">Pay your company bill</h4>
-  <p class="text-sm 4xl:text-base font-light">One click to pay all of your company's bills.</p>
+  <p class="text-sm 4xl:text-base font-zain-light">One click to pay all of your company's bills.</p>
 </div>
               </div>
               <div class="pt-4">
@@ -236,7 +236,7 @@
 
 <div>
   <h4 class="font-bold text-base 4xl:text-xl text-zain-medium">Pay your line bill</h4>
-  <p class="text-sm 4xl:text-base font-light">Make your line payments hassle-free.</p>
+  <p class="text-sm 4xl:text-base font-zain-light">Make your line payments hassle-free.</p>
 </div>
               </div>
               <div class="pt-4">
@@ -264,12 +264,12 @@
               </div>
             </div>
         </div>
-        <h3 class="font-semibold 4xl:CairoBlack text-zain-medium font-boldtext-lg 4xl:text-xl 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
+        <h3 class="font-semibold 4xl:CairoBlack text-zain-medium font-bold text-lg 4xl:text-xl 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
           Buy a New Service from Zain
         </h3>
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3.5">
           <CardComponent
-            subtitle="Zain has plans for all."
+            subtitle="Zain has plans for all"
             title="Zain Mobile Plans"
             style="
               background: linear-gradient(
@@ -806,7 +806,7 @@
             </template>
           </CardComponent>
         </div>
-        <h3 class="font-semibold 4xl:CairoBlack text-zain-medium font-boldtext-lg 4xl:text-xl 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
+        <h3 class="font-semibold 4xl:CairoBlack text-zain-medium text-lg 4xl:text-xl 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
           Zain World
         </h3>
         <div class="grid grid-cols-2 sm:grid-cols-4 sm:auto-rows-auto my-4 gap-4">
@@ -877,8 +877,8 @@
           <CardComponent
             title="eSIM"
             subtitle="Transfer to Zain eSIM"
-            style="color: #333"
-            class="col-auto"
+            style="color: #333; box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.05);"
+            class="col-auto border border-[#efefef]"
           >
             <template #icon>
               <svg
@@ -907,8 +907,8 @@
           <CardComponent
             title="Maps & Coverage"
             subtitle="Check our coverage"
-            class="col-span-2"
-            style="color: #333"
+            class="col-span-2 border-2 border-[#efefef]"
+            style="color: #333; box-shadow: none;"
           >
             <template #icon>
               <svg

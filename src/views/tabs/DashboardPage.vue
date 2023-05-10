@@ -6,7 +6,7 @@
       </template>
     </HeaderContainer>
     <ion-content :fullscreen="true" id="ion-content-dashboard">
-      <div class="max-w-6xl mx-auto p-4 min-h-screen">
+      <div class="max-w-6xl mx-auto px-4 py-[36px] min-h-screen">
         <div class="relative text-white z-50 shadow-0 rounded-xl p-3 mb-4" style="background: linear-gradient(90.81deg, #E39604 0%, #F49F01 100%);" v-show="crnOpen">
           <ion-icon :icon="close" @click="crnOpen = false" class="float-right rtl:float-left"></ion-icon>
           <div class="flex space-x-2">
@@ -49,19 +49,19 @@
             </h3>
           </div>
           <div class="flex justify-center place-items-center -mt-2">
-            <p class="text-zain-primary text-xs 4xl:text-sm 4xl:text-base 4xl:text-lg">Bills History<span><ion-icon class="absolute pt-1"
+            <p class="text-zain-primary text-sm 4xl:text-sm 4xl:text-base 4xl:text-lg">Bills History<span><ion-icon class="absolute pt-1"
                   :icon="chevronForward"></ion-icon></span></p>
           </div>
         </div>
         <div class="bg-white rounded-xl shadow-0 p-2">
           <div class="px-3 space-y-2">
             <div class="flex justify-between space-x-4 sm:justify-start">
-              <h4 class="text-lg font-bold text-zain-medium mt-1">Total Payment Required</h4>
+              <h4 class="text-base font-bold text-zain-medium mt-1">Total Payment Required</h4>
               <ion-chip class="rounded-md" style="background: #FAe8e8; height:23px;">
                 <h6 class="CairoRegular" style="color: #C50000">Unpaid</h6>
               </ion-chip>
             </div>
-            <h5 class="text-xl sm:text-[26px] text-zain-primary CairoRegular">1401.58 SAR</h5>
+            <h5 class="text-xl sm:text-[24px] text-zain-primary font-semibold">1401.58 SAR</h5>
             <p class="text-zinc-400 text-xs 4xl:text-sm 4xl:text-base 4xl:text-lg ml-1.5 CairoRegular sm:text-sm 4xl:text-base 4xl:text-lg my-2">15% VAT Inclusive</p>
             <hr>
           </div>
@@ -90,12 +90,12 @@
             </div>
             <div>
               <h5 class="font-bold text-base 4xl:text-lg text-zain-medium -mt-1">Unbilled Amount</h5>
-              <p class="text-xs 4xl:text-sm 4xl:text-base 4xl:text-lg text-zain-medium CairoLight">Accumulated to be added in the next bill</p>
-              <p class="font-bold text-sm 4xl:text-base 4xl:text-lg mt-0.5">365.90 SAR</p>
+              <p class="text-sm 4xl:text-sm 4xl:text-base 4xl:text-lg text-zain-medium CairoLight">Accumulated to be added in the next bill</p>
+              <p class="font-bold text-base 4xl:text-base 4xl:text-lg mt-0.5">365.90 SAR</p>
             </div>
           </div>
         </div>
-        <h3 class="font-semibold 4xl:CairoBlack text-zain-medium font-boldtext-lg 4xl:text-xl 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
+        <h3 class="font-semibold 4xl:CairoBlack text-zain-medium font-bold text-lg 4xl:text-xl 4xl:text-2xl mt-10 mt-9 mb-[15px] mx-1">
           Account Management
         </h3>
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 my-2">

@@ -93,6 +93,7 @@ ion-tab-button{
   max-width: 140px !important;
   --padding-start:0px !important;
   --padding-end:0px !important;
+  font-size: 18px !important;
 }
 
 a.button-native>span.button-inner {
