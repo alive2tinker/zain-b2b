@@ -6,61 +6,7 @@
       </template>
     </HeaderContainer>
     <ion-content :fullscreen="true" id="ion-content-home">
-      <div class="bg-white md:rounded-xl p-1.5">
-        <div class="max-w-screen-2xl mx-auto px-2 lg:px-20 md:px-10">
-          <Splide
-            class="pt-[20px] md:pt-[30px]"
-            :autoplay="true"
-            :rewind="true"
-            :options="splideOptions"
-            @splide:pagination:mounted="hideDefaultPagination"
-            @splide:moved="updatePagination"
-            aria-label="My Favorite Images"
-          >
-            <SplideSlide>
-              <img
-                class="rounded-xl sm:hidden"
-                src="@/assets/images/mobile.jpg"
-                alt="Sample 1"
-              />
-              <img
-                class="rounded-xl hidden sm:block"
-                src="@/assets/images/web.jpg"
-                alt="Sample 1"
-              />
-            </SplideSlide>
-            <SplideSlide>
-              <img
-                class="rounded-xl sm:hidden"
-                src="@/assets/images/mobile-1.jpeg"
-                alt="Sample 1"
-              />
-              <img
-                class="rounded-xl hidden sm:block"
-                src="@/assets/images/web-1.jpeg"
-                alt="Sample 1"
-              />
-            </SplideSlide>
-
-          </Splide>
-        </div>
-        <div class="max-w-4xl mx-auto">
-          <div class="flex sm:mt-[10px] mb-[5px] sm:mb-[15px] justify-center">
-            <div class="space-x-2 mt-3">
-              <button
-                v-for="(page, index) in pages"
-                @click="changeSlide(index)"
-                :key="index"
-                :class="{
-                  'w-2 h-2 rounded-full': true,
-                  'bg-white border-2 border-zain-primary': currentIndex === index,
-                  'bg-zinc-200 border-2 border-zain-lightgray': currentIndex !== index,
-                }"
-              ></button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <CarouselComponent />
       <div class="max-w-6xl mx-auto px-6">
         <h3 class="4xl:CairoBlack font-semibold text-lg 4xl:text-2xl mt-9 mb-[15px] mx-1">
           QuickPay
@@ -960,8 +906,9 @@
             </template>
           </CardComponent>
         </div>
+        <div class="w-screen h-40"></div>
       </div>
-      <FooterComponent class="mt-2 absolute">
+      <FooterComponent>
       </FooterComponent>
     </ion-content>
   </ion-page>
@@ -980,18 +927,7 @@ import CardComponent from "@/components/CardComponent.vue";
 import LineSelector from "@/components/LineSelector.vue";
 import { chevronForward } from "ionicons/icons";
 import { ref } from "vue";
-
-const splideOptions = {
-  type: 'loop',
-  autoplay:true,
-  speed: 1000,
-  arrows: false,
-  gap: "4em",
-  pagination: true,
-  perPage: 1
-};
-const currentIndex = ref(0);
-const pages = ref(0);
+import CarouselComponent from '@/components/CarouselComponent.vue'
 
 let numberInputLabel = 'Contract number';
 let inputPlaceholder = '1XXXXXXXXX';
@@ -1007,21 +943,6 @@ function changeCurrentTab(tab){
   }
 }
 
-let splideEl = null;
-
-function hideDefaultPagination(splide, data) {
-  data.list.classList.add("hidden");
-  pages.value = splide.Components.Elements.slides.length;
-  splideEl = splide;
-}
-
-function updatePagination(splide, newIndex) {
-  currentIndex.value = newIndex;
-}
-
-function changeSlide(index){
-  splideEl.go(index);
-}
 
 function updateLabel(e){
   if(e.target.value !== ""){

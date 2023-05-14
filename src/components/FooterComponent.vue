@@ -1,5 +1,5 @@
 <template>
-  <div style="background-color: var(--ion-color-primary)"
+  <div style="background-color: var(--ion-color-primary); position:fixed; bottom: 0;"
     class="w-screen hidden sm:block mt-8 bg-zain-primary px-7 py-4 left-0">
     <div class="max-w-7xl mx-auto flex justify-between text-white">
       <ion-label class="py-2.5 px-4">© 2023 Zain KSA. All rights reserved.</ion-label>
