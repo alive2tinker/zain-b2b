@@ -1,7 +1,7 @@
 <template>
     <div>
         <Splide :has-track="false" :rewind="true" :options="splideOptions">
-            <div class="bg-white md:rounded-xl p-1.5">
+            <div class="bg-white md:rounded-xl py-[36px] p-1.5">
                 <div class="max-w-screen-2xl mx-auto px-2 lg:px-20 md:px-10">
                     <SplideTrack>
                         <SplideSlide>

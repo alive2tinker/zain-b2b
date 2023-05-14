@@ -6,7 +6,7 @@
       </template>
     </HeaderContainer>
     <ion-content :fullscreen="true" id="ion-content-home">
-      <CarouselComponent />
+        <CarouselComponent></CarouselComponent>
       <div class="max-w-6xl mx-auto px-6">
         <h3 class="4xl:CairoBlack font-semibold text-lg 4xl:text-2xl mt-9 mb-[15px] mx-1">
           QuickPay

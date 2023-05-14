@@ -17,11 +17,11 @@
         </ion-buttons>
       </div>
     </ion-toolbar>
-    <ion-toolbar class="border-b pb-2.5 border-gray-200" v-if="!isLoggedIn">
-      <div :class="{'max-w-7xl mx-auto flex':true}">
-        <div class="flex w-full mx-4 space-x-4">
-          <div class="mt-1.5 mb-2">
-            <h1 :class="{'text-base font-semibold': true, 'mt-[9px]': isPlatform('desktop'), 'mt-1': isPlatform('android')}">Login Or Register</h1>
+    <ion-toolbar :class="{'border-b-[1px] ion-no-padding border-gray-200': true, '-pt-5': isPlatform('ios')}" v-if="!isLoggedIn">
+      <div class="max-w-7xl mx-auto flex py-[10px]">
+        <div class="flex w-full mx-4 space-x-2.5">
+          <div>
+            <h1 class="text-base font-semibold">Login Or Register</h1>
             <p class="text-sm" style="color:#5f5f5f">Be a part of Zain Business today!</p>
           </div>
         </div>
