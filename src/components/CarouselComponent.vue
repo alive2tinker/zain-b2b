@@ -14,8 +14,8 @@
                         </SplideSlide>
                     </SplideTrack>
                 </div>
-                <div class="max-w-4xl mx-auto pt-10">
-                    <div class="splide__pagination"></div>
+                <div class="max-w-4xl mx-auto py-3">
+                    <div class="splide__pagination mb-3"></div>
                 </div>
             </div>
         </Splide>
