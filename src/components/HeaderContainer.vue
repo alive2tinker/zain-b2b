@@ -2,7 +2,7 @@
   <div>
     <ion-header class="ion-no-border bg-white z-50">
     <ion-toolbar class="border-b">
-      <div :class="{'max-w-7xl mx-auto flex':true, 'pt-3': isPlatform('desktop') || isPlatform('android')}">
+      <div :class="{'max-w-7xl mx-auto flex':true, 'forcedPadding': isPlatform('desktop') || isPlatform('android')}">
         <ion-title class="pb-[10px]">
           <a href="/tabs/home">
             <svg width="86" height="45" viewBox="0 0 86 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -98,5 +98,8 @@ ion-tab-button{
 
 a.button-native>span.button-inner {
   justify-content: space-between !important;
+}
+.forcedPadding{
+  padding-top: 12px !important;
 }
 </style>
