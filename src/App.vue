@@ -1,6 +1,6 @@
 <template>
   <ion-app>
-    <ion-router-outlet />
+    <ion-router-outlet :key="router.currentRoute"/>
   </ion-app>
 </template>
 
@@ -8,6 +8,9 @@
 import { IonApp, IonRouterOutlet, isPlatform } from '@ionic/vue';
 import { StatusBar, Style } from '@capacitor/status-bar';
 import { onMounted } from 'vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 
 onMounted(() => {
   if (isPlatform('capacitor')) {
