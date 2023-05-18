@@ -99,7 +99,4 @@ ion-tab-button{
 a.button-native>span.button-inner {
   justify-content: space-between !important;
 }
-.forcedPadding{
-  padding-top: 12px !important;
-}
 </style>

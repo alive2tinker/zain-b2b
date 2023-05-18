@@ -115,3 +115,7 @@ input.number-input:focus~.number-label {
     --color: var(--ion-color-medium) !important;
     --color-selected: var(--ion-color-medium) !important;
 }
+
+.forcedPadding {
+    padding-top: 12px !important;
+}
