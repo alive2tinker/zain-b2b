@@ -1,13 +1,12 @@
 <template>
-  <ion-header
-    :class="{ 'ion-no-border bg-white': true, '-mt-8': isPlatform('ios') && !isPlatform('mobileweb') }">
+  <ion-header :class="{'ion-no-border bg-white':true, '-mt-10': isPlatform('ios') && !isPlatform('mobileweb')}">
     <ion-toolbar :class="{'border-b-[1px] ion-no-padding border-gray-200': true, '-pt-5': isPlatform('ios')}" v-if="isLoggedIn">
       <div class="max-w-7xl mx-auto flex py-[10px]">
         <div class="flex w-full mx-4 space-x-2.5">
           <img class="w-[45px] border-[1.5px] border-gray-200 aspect-square rounded-xl" src="https://pbs.twimg.com/profile_images/1630134657244168194/wEgyvsSS_400x400.jpg" alt="">
           <div>
             <h1><b>Hailah Alrashed</b></h1>
-            <p class="text-zain-medium">Edit Account Details</p>
+            <p>Edit Account Details</p>
           </div>
         </div>
         <ion-buttons class="mx-4" slot="end">
@@ -27,7 +26,7 @@
         </div>
         <ion-buttons class="mx-4" slot="end">
           <ion-button @click="login">
-            <ion-icon :icon="chevronDown" v-show="isLoggedIn"></ion-icon>
+            <ion-icon :icon="chevronForward" v-show="isLoggedIn"></ion-icon>
             <svg width="24" height="26" v-show="!isLoggedIn" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M2.99609 13.226H14.0007" stroke="#669933" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M11 10.1533L14.0013 13.2263L11 16.2993" stroke="#669933" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -40,17 +39,17 @@
     </ion-toolbar>
   </ion-header>
 </template>
-<script setup lang="ts">
-import { IonToolbar, IonHeader, IonButtons, isPlatform } from '@ionic/vue';
-import { chevronDown, chevronForward } from 'ionicons/icons';
+<script setup>
+import { IonToolbar, IonHeader, IonButtons, isPlatform} from '@ionic/vue';
+import { chevronForward } from 'ionicons/icons';
 import { useStore } from 'vuex';
+import LoginIcon from '@/assets/icons/LoginIcon.svg'
 import { computed } from 'vue';
-
 
 const store = useStore();
 const isLoggedIn = computed(() => store.getters['isLoggedIn']);
 
 function login(){
-  store.dispatch('toggleLogin');
+  store.dispatch('toggleLogin')
 }
 </script>
